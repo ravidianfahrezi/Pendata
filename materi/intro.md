@@ -1,9 +1,9 @@
 # PROFIL PENAMBANGAN DATA
 
-- *Nama:* Ach Rayyan  
-- *NIM:* 240411100188  
+- *Nama:* Ravi Dian Fahrezi
+- *NIM:* 240411100056  
 - *Kelas:* Penambangan Data A
-- *Email:* madfahhor@gmail.com  
+- *Email:* ravidianfahrezi123@gmail.com  
 - *Program Studi:* Teknik Informatika  
 
 
