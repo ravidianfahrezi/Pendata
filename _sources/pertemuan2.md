@@ -12,6 +12,8 @@ Pada tugas ini digunakan dataset Iris, yaitu dataset klasik yang sering dijadika
 
 ## 2. Deskripsi Dataset
 
+! [] (images/pertemuan2/data-iris.png)
+
 Dataset Iris terdiri dari 150 data observasi yang merepresentasikan bunga iris. Setiap data memiliki empat atribut numerik, yaitu:
 
 1. Sepal Length: panjang kelopak luar bunga
@@ -45,11 +47,15 @@ Hasil statistik deskriptif ini menunjukkan bahwa atribut petal memiliki variasi 
 
 ### 4.1 Scatter Plot Sepal Length dan Sepal Width
 
+! [] (images/pertemuan2/sp-sepal.png)
+
 Scatter plot antara sepal length dan sepal width digunakan untuk melihat hubungan antara dua atribut sepal. Berdasarkan visualisasi, titik-titik data terlihat menyebar dan tidak membentuk pola linear yang jelas.
 
 Sebaran data yang acak menunjukkan bahwa hubungan antara sepal length dan sepal width tergolong lemah. Perubahan nilai sepal length tidak diikuti secara konsisten oleh perubahan sepal width. Oleh karena itu, kombinasi kedua atribut sepal ini kurang efektif jika digunakan sebagai penentu utama dalam membedakan karakteristik data bunga iris.
 
 ### 4.2 Scatter Plot Petal Length dan Petal Width
+
+! [] (images/pertemuan2/sp-petal.png)
 
 Scatter plot antara petal length dan petal width menunjukkan pola yang berbeda dibandingkan atribut sepal. Titik-titik data terlihat lebih rapat dan membentuk kecenderungan linear positif.
 
@@ -57,6 +63,8 @@ Hal ini menunjukkan bahwa terdapat hubungan yang kuat antara petal length dan pe
 
 
 ## 5. Analisis Korelasi Berdasarkan Scatter Plot
+
+! [] (images/pertemuan2/korelasi.png)
 
 Analisis korelasi pada tugas ini dilakukan secara visual menggunakan scatter plot. Interpretasi korelasi didasarkan pada pola sebaran data, bukan pada nilai numerik koefisien korelasi.
 
