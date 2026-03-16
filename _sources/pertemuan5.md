@@ -350,10 +350,13 @@ if in_data is not None:
 ```
 
 **Alur di Orange**
+
 ![](images/pertemuan5/alur.png)
 
 **Hasil Sebelum**
+
 ![](images/pertemuan5/hasil-sebelum.png)
 
 **Hasil Sesudah**
-![](images/pertemuan5/hasil-seduah.png)
+
+![](images/pertemuan5/hasil-sesudah.png)
