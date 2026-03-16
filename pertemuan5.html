@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pertemuan 3 &#8212; Profil Penambangan Data</title>
+    <title>Pertemuan 5 &#8212; Profil Penambangan Data</title>
   
   
   
@@ -57,11 +57,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pertemuan3';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pertemuan5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Pertemuan 4" href="pertemuan4.html" />
-    <link rel="prev" title="Pertemuan 2" href="pertemuan2.html" />
+    <link rel="prev" title="Pertemuan 4" href="pertemuan4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,7 +183,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="pertemuan2.html">Pertemuan 2</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pertemuan 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pertemuan3.html">Pertemuan 3</a></li>
 
 
 
@@ -192,7 +193,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="pertemuan4.html">Pertemuan 4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pertemuan5.html">Pertemuan 5</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pertemuan 5</a></li>
 
 
 
@@ -267,7 +268,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpertemuan3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpertemuan5.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -297,7 +298,7 @@
       
       
       
-      <li><a href="_sources/pertemuan3.md" target="_blank"
+      <li><a href="_sources/pertemuan5.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Pertemuan 3</h1>
+    <h1>Pertemuan 5</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -391,21 +392,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pertemuan 3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengukuran-jarak-pada-data-campuran">PENGUKURAN JARAK PADA DATA CAMPURAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-dataset">2. Deskripsi Dataset</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-dataset">2.1 Struktur Dataset</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#alasan-pemilihan-metode">3. Alasan Pemilihan Metode</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-perhitungan">4. Proses Perhitungan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">4.1 Langkah-langkah</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-pengukuran-jarak">5. Hasil Pengukuran Jarak</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-hasil">6. Interpretasi Hasil</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">7. Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pertemuan 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score-normalization">Z-Score Normalization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#min-max-normalization">Min-Max Normalization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decimal-scaling">Decimal Scaling</a></li>
 </ul>
 
             </nav>
@@ -418,96 +408,151 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="pertemuan-3">
-<h1>Pertemuan 3<a class="headerlink" href="#pertemuan-3" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pertemuan-5">
+<h1>Pertemuan 5<a class="headerlink" href="#pertemuan-5" title="Link to this heading">#</a></h1>
+<p>Data mentah dalam Data Mining sering kali memiliki skala atribut yang sangat timpang karena awalnya dirancang untuk kebutuhan operasional, bukan analisis. Ketimpangan ini dapat mendistorsi hasil algoritma yang berbasis perhitungan jarak, di mana atribut bernilai besar akan mendominasi atribut kecil secara tidak proporsional. Untuk mengatasinya, diperlukan teknik Normalisasi Data—seperti Min-Max Normalization, Z-Score, atau Decimal Scaling—yang mentransformasi nilai ke dalam skala seragam tanpa menghilangkan informasi esensial, sehingga memastikan setiap atribut memberikan kontribusi yang adil dalam proses pemodelan.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="pengukuran-jarak-pada-data-campuran">
-<h1>PENGUKURAN JARAK PADA DATA CAMPURAN<a class="headerlink" href="#pengukuran-jarak-pada-data-campuran" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="pendahuluan">
-<h1>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h1>
-<p>Pada tahap Data Understanding dalam proses Data Mining (CRISP-DM), salah satu langkah penting adalah memahami karakteristik data, termasuk mengidentifikasi tipe atribut, rentang nilai, serta mengukur tingkat kemiripan atau perbedaan antar objek. Pada tugas ini, fokus Data Understanding dilakukan melalui identifikasi tipe data campuran dan perhitungan jarak antar objek sebagai bentuk pemahaman struktur data. Pengukuran jarak menjadi penting terutama ketika data memiliki tipe campuran, seperti numerik dan kategorikal. Tugas ini bertujuan untuk melakukan pengukuran jarak pada dataset dengan tipe data campuran menggunakan metode yang sesuai.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="deskripsi-dataset">
-<h1>2. Deskripsi Dataset<a class="headerlink" href="#deskripsi-dataset" title="Link to this heading">#</a></h1>
-<p>Dataset yang digunakan merupakan dataset tamu hotel yang terdiri dari 200 data (observasi). Dataset ini dibuat khusus untuk keperluan analisis pengukuran jarak.</p>
-<section id="struktur-dataset">
-<h2>2.1 Struktur Dataset<a class="headerlink" href="#struktur-dataset" title="Link to this heading">#</a></h2>
-<p>Dataset memiliki beberapa tipe atribut:</p>
-<p>A. Numerik</p>
+<section class="tex2jax_ignore mathjax_ignore" id="z-score-normalization">
+<h1>Z-Score Normalization<a class="headerlink" href="#z-score-normalization" title="Link to this heading">#</a></h1>
+<p>Z-Score Normalization atau sering disebut standardisasi merupakan metode normalisasi yang mengubah distribusi data sehingga memiliki nilai rata-rata sebesar 0 dan standar deviasi sebesar 1. Dengan cara ini, data akan memiliki distribusi yang lebih seimbang sehingga memudahkan proses analisis.</p>
+<p>Metode ini biasanya digunakan ketika nilai minimum atau maksimum suatu atribut tidak diketahui secara pasti, atau ketika dataset mengandung outlier yang dapat memengaruhi skala data jika menggunakan metode normalisasi lain seperti Min-Max.</p>
+<p><strong>Rumus Z-Score</strong>
+<span class="math notranslate nohighlight">\(v' = \frac{v - \bar{A}}{\sigma_A}\)</span></p>
+<p><em>Keterangan</em></p>
 <ul class="simple">
-<li><p>Age</p></li>
-<li><p>Length_of_Stay</p></li>
-<li><p>Satisfaction_Rating</p></li>
+<li><p>v = nilai asli data</p></li>
+<li><p>v’ = nilai hasil normalisasi</p></li>
+<li><p>Ā = rata-rata dari atribut A</p></li>
+<li><p>σA = standar deviasi atribut A</p></li>
 </ul>
-<p>B. Kategorikal</p>
+<p>Sebagai contoh, misalkan terdapat data: <code class="docutils literal notranslate"><span class="pre">[10,</span> <span class="pre">20,</span> <span class="pre">30,</span> <span class="pre">40,</span> <span class="pre">100]</span></code>, Nilai 100 dapat dianggap sebagai outlier.</p>
+<p><em>Hasil perhitungan:</em></p>
 <ul class="simple">
-<li><p>Room_Type (Standard, Deluxe, Suite)</p></li>
-<li><p>Booking_Channel (Online, Travel Agent, Walk-in)</p></li>
-<li><p>Membership_Level (Bronze, Silver, Gold)</p></li>
+<li><p>Rata-rata = 40</p></li>
+<li><p>Standar deviasi ≈ 31.62</p></li>
 </ul>
-<p>C. Identifier</p>
+<p><em>Hasil Normalisasi</em></p>
 <ul class="simple">
-<li><p>Guest_ID (tidak digunakan dalam perhitungan jarak)</p></li>
+<li><p>10 =&gt; -0.94</p></li>
+<li><p>40 =&gt; 0.00</p></li>
+<li><p>100 =&gt; 1.89
+Nilai 0 menunjukkan bahwa data berada tepat pada nilai rata-rata.</p></li>
 </ul>
-<p><img alt="" src="_images/1.png" /></p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="alasan-pemilihan-metode">
-<h1>3. Alasan Pemilihan Metode<a class="headerlink" href="#alasan-pemilihan-metode" title="Link to this heading">#</a></h1>
-<p>Karena dataset memiliki tipe data campuran (numerik dan kategorikal), maka metode jarak yang sesuai adalah Gower Distance.</p>
-<p>Metode ini mampu:</p>
-<ul class="simple">
-<li><p>Menghitung jarak pada data numerik</p></li>
-<li><p>Menghitung perbedaan pada data kategorikal</p></li>
-<li><p>Menggabungkan semua tipe atribut dalam satu perhitungan</p></li>
-</ul>
-<p>Metode lain seperti Euclidean Distance tidak dapat digunakan secara langsung karena hanya cocok untuk data numerik.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="proses-perhitungan">
-<h1>4. Proses Perhitungan<a class="headerlink" href="#proses-perhitungan" title="Link to this heading">#</a></h1>
-<p>Perhitungan dilakukan menggunakan Google Colab dengan bantuan library Python bernama “gower”.</p>
-<section id="langkah-langkah">
-<h2>4.1 Langkah-langkah<a class="headerlink" href="#langkah-langkah" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Upload dataset ke Google Colab</p></li>
-<li><p>Menghapus kolom Guest_ID</p></li>
-<li><p>Menghitung matriks jarak menggunakan fungsi gower_matrix()</p></li>
-</ul>
-<p>Contoh kode yang digunakan:</p>
-<p>Contoh kode yang digunakan:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">gower</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;hotel_mixed_dataset_200_rows.csv&quot;</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Guest_ID&quot;</span><span class="p">])</span>
-<span class="n">gower_matrix</span> <span class="o">=</span> <span class="n">gower</span><span class="o">.</span><span class="n">gower_matrix</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="c1"># membuat dataset contoh</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nilai&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">100</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># membuat objek scaler</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+
+<span class="c1"># melakukan normalisasi Z-score</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;zscore_sklearn&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;nilai&#39;</span><span class="p">]])</span>
+
+<span class="c1"># menampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
+<p><img alt="" src="_images/zscore-hasil.png" /></p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-pengukuran-jarak">
-<h1>5. Hasil Pengukuran Jarak<a class="headerlink" href="#hasil-pengukuran-jarak" title="Link to this heading">#</a></h1>
-<p>Hasil perhitungan berupa matriks jarak berukuran 200 × 200.</p>
-<p>Nilai jarak berada pada rentang 0 sampai 1:</p>
+<section class="tex2jax_ignore mathjax_ignore" id="min-max-normalization">
+<h1>Min-Max Normalization<a class="headerlink" href="#min-max-normalization" title="Link to this heading">#</a></h1>
+<p><strong>Min-Max</strong> Normalization merupakan metode normalisasi yang bertujuan untuk mengubah nilai atribut numerik ke dalam rentang tertentu, biasanya 0 sampai 1. Teknik ini sering digunakan agar semua atribut memiliki skala yang sebanding.</p>
+<p>Metode ini banyak digunakan pada algoritma yang berbasis perhitungan jarak, seperti K-Nearest Neighbors, karena tanpa normalisasi atribut dengan nilai yang lebih besar dapat mendominasi hasil perhitungan.</p>
+<p><strong>Rumus Min-Max Normalization</strong>
+<span class="math notranslate nohighlight">\(v' = \frac{v - min_A}{max_A - min_A} (new\_max_A - new\_min_A) + new\_min_A\)</span></p>
+<p>Jika rentang yang digunakan adalah 0 sampai 1, maka rumusnya dapat disederhanakan menjadi:
+<span class="math notranslate nohighlight">\(v' = \frac{v - min_A}{max_A - min_A}\)</span></p>
+<p><em>Keterangan</em></p>
 <ul class="simple">
-<li><p>0 menunjukkan dua objek identik</p></li>
-<li><p>Nilai mendekati 1 menunjukkan objek semakin berbeda</p></li>
+<li><p>v = nilai asli data</p></li>
+<li><p>v’ = nilai setelah normalisasi</p></li>
+<li><p>minA = nilai minimum pada atribut A</p></li>
+<li><p>maxA = nilai maksimum pada atribut A</p></li>
+<li><p>new_minA = batas bawah rentang baru</p></li>
+<li><p>new_maxA = batas atas rentang baru</p></li>
 </ul>
-<p><img alt="" src="_images/2.png" />
-<img alt="" src="_images/3.png" /></p>
+<p>Contoh data: <code class="docutils literal notranslate"><span class="pre">[10,</span> <span class="pre">20,</span> <span class="pre">30,</span> <span class="pre">40,</span> <span class="pre">100]</span></code></p>
+<ul class="simple">
+<li><p>Nilai minimum = 10</p></li>
+<li><p>Nilai maksimum = 100</p></li>
+</ul>
+<p><em>Hasil Normalisasi</em></p>
+<ul class="simple">
+<li><p>10 =&gt; -0.0</p></li>
+<li><p>40 =&gt; 0.33</p></li>
+<li><p>100 =&gt; 1.0</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">MinMaxScaler</span>
+
+<span class="c1"># membuat dataset contoh</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nilai&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">55</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">95</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># membuat objek scaler</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+
+<span class="c1"># melakukan normalisasi</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;minmax&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;nilai&#39;</span><span class="p">]])</span>
+
+<span class="c1"># membulatkan 3 angka di belakang koma</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;minmax&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;minmax&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># menampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="" src="_images/hasil-minmax.png" /></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="interpretasi-hasil">
-<h1>6. Interpretasi Hasil<a class="headerlink" href="#interpretasi-hasil" title="Link to this heading">#</a></h1>
-<p>Berdasarkan hasil matriks jarak, dapat dilihat bahwa setiap tamu memiliki tingkat kemiripan yang berbeda dengan tamu lainnya.</p>
-<p>Sebagai contoh: Jika jarak antara tamu A dan tamu B adalah 0.32, maka kedua tamu tersebut memiliki karakteristik yang cukup mirip. Jika jaraknya 0.69, maka karakteristik keduanya cukup berbeda.</p>
-<p>Pengukuran ini dapat digunakan sebagai dasar untuk analisis lanjutan seperti clustering.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
-<h1>7. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
-<p>Pengukuran jarak pada data campuran dapat dilakukan menggunakan metode Gower Distance. Metode ini mampu mengakomodasi berbagai tipe data dalam satu perhitungan.</p>
-<p>Hasil pengukuran berupa matriks jarak 200 × 200 yang menunjukkan tingkat kemiripan antar tamu hotel dengan rentang nilai 0 hingga 1.</p>
-<p>Dengan demikian, tahap Data Understanding telah berhasil dilakukan melalui proses pengukuran jarak pada dataset campuran.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="decimal-scaling">
+<h1>Decimal Scaling<a class="headerlink" href="#decimal-scaling" title="Link to this heading">#</a></h1>
+<p>Decimal Scaling merupakan metode normalisasi yang dilakukan dengan cara menggeser posisi titik desimal pada nilai data. Proses ini dilakukan dengan membagi nilai atribut dengan pangkat sepuluh tertentu.</p>
+<p>Tujuan dari metode ini adalah agar nilai absolut maksimum dari atribut menjadi lebih kecil dari 1.</p>
+<p><strong>Rumus Decimal Scaling</strong>
+<span class="math notranslate nohighlight">\(v' = \frac{v}{10^j}\)</span></p>
+<p>Keterangan</p>
+<ul class="simple">
+<li><p>v = nilai asli data</p></li>
+<li><p>v’ = nilai setelah normalisasi</p></li>
+<li><p>j = bilangan bulat terkecil yang membuat nilai maksimum atribut menjadi kurang dari 1
+Nilai j biasanya ditentukan dari jumlah digit angka terbesar dalam atribut.</p></li>
+</ul>
+<p>Contoh data: <code class="docutils literal notranslate"><span class="pre">[10,</span> <span class="pre">20,</span> <span class="pre">30,</span> <span class="pre">40,</span> <span class="pre">100]</span></code></p>
+<p>Nilai terbesar = 100
+Jumlah digit = 3</p>
+<p>Sehingga semua nilai dibagi dengan 10³ (1000).</p>
+<p>Hasil normalisasi:</p>
+<ul class="simple">
+<li><p>10 =&gt; 0.01</p></li>
+<li><p>40 =&gt; 0.04</p></li>
+<li><p>100 =&gt; 0.10</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># dataset contoh</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nilai&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">100</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># mencari nilai maksimum</span>
+<span class="n">max_val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;nilai&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="c1"># menentukan nilai j</span>
+<span class="n">j</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">max_val</span><span class="p">)))</span>
+
+<span class="c1"># melakukan decimal scaling</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;decimal_scaling&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;nilai&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">j</span><span class="p">)</span>
+
+<span class="c1"># membulatkan hasil</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;decimal_scaling&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;decimal_scaling&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="" src="_images/hasil-minmax.png" /></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -541,22 +586,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="pertemuan2.html"
+       href="pertemuan4.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pertemuan 2</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="pertemuan4.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Pertemuan 4</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -574,21 +610,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pertemuan 3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengukuran-jarak-pada-data-campuran">PENGUKURAN JARAK PADA DATA CAMPURAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-dataset">2. Deskripsi Dataset</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-dataset">2.1 Struktur Dataset</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#alasan-pemilihan-metode">3. Alasan Pemilihan Metode</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-perhitungan">4. Proses Perhitungan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">4.1 Langkah-langkah</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-pengukuran-jarak">5. Hasil Pengukuran Jarak</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-hasil">6. Interpretasi Hasil</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">7. Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pertemuan 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score-normalization">Z-Score Normalization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#min-max-normalization">Min-Max Normalization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decimal-scaling">Decimal Scaling</a></li>
 </ul>
 
   </nav></div>
