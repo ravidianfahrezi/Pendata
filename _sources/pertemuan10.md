@@ -1,210 +1,196 @@
 # Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)
 
-## Pertemuan 10  
-## Naive Bayes
-
----
+## Pertemuan 10: Naive Bayes
 
 ## 1. Pengertian Naive Bayes
 
-Naive Bayes adalah algoritma klasifikasi berbasis probabilitas yang menggunakan konsep dari Teorema Bayes. Algoritma ini disebut *Naive* atau naif karena mengasumsikan bahwa setiap fitur dalam data bersifat independen atau tidak saling memengaruhi satu sama lain.
+Naive Bayes adalah algoritma klasifikasi berbasis probabilitas yang menggunakan Teorema Bayes. Algoritma ini disebut "Naive" karena memiliki asumsi bahwa setiap fitur atau atribut pada data bersifat independen, yaitu tidak saling memengaruhi satu sama lain. Walaupun dalam kondisi nyata fitur-fitur dalam dataset sering kali memiliki hubungan, Naive Bayes tetap banyak digunakan karena sederhana, cepat, dan cukup baik untuk berbagai kasus klasifikasi.
 
-Meskipun pada kenyataannya antar fitur dalam sebuah dataset sering kali saling berkaitan, asumsi sederhana ini membuat Naive Bayes tetap menjadi algoritma yang cepat, efisien, dan cukup baik untuk berbagai kasus klasifikasi.
-
----
+Pada proyek ini, jenis Naive Bayes yang digunakan adalah **Gaussian Naive Bayes**. Metode ini cocok digunakan karena dataset IRIS memiliki fitur berupa angka kontinu, seperti panjang sepal, lebar sepal, panjang petal, dan lebar petal.
 
 ## 2. Rumus Teorema Bayes
 
 Rumus dasar Teorema Bayes adalah sebagai berikut:
 
 ```text
-P(C|X) = (P(X|C) * P(C)) / P(X)
+P(C|X) = (P(X|C) x P(C)) / P(X)
 ```
 
-### Keterangan:
+Keterangan:
 
-- **P(C|X)**: Peluang kelas C jika diketahui atribut X (*posterior*).
-- **P(X|C)**: Peluang atribut X jika diketahui kelas C (*likelihood*).
-- **P(C)**: Peluang awal munculnya kelas C (*prior*).
-- **P(X)**: Probabilitas kemunculan atribut X (*evidence*).
-
----
+- **P(C|X)**: peluang suatu data termasuk ke dalam kelas C berdasarkan atribut X.
+- **P(X|C)**: peluang munculnya atribut X jika diketahui kelasnya adalah C.
+- **P(C)**: peluang awal kemunculan kelas C.
+- **P(X)**: peluang kemunculan atribut X.
 
 ## 3. Jenis-Jenis Naive Bayes
 
-Beberapa jenis utama algoritma Naive Bayes adalah sebagai berikut:
+Beberapa jenis utama Naive Bayes adalah sebagai berikut:
 
 1. **Gaussian Naive Bayes**  
-   Digunakan untuk data dengan fitur numerik kontinu, seperti panjang dan lebar sepal atau petal pada dataset Iris.
+   Digunakan untuk data numerik kontinu. Contohnya adalah dataset IRIS yang memiliki atribut `sepal_length`, `sepal_width`, `petal_length`, dan `petal_width`.
 
 2. **Multinomial Naive Bayes**  
-   Umumnya digunakan untuk data teks, misalnya klasifikasi dokumen berdasarkan frekuensi kemunculan kata.
+   Digunakan untuk data berbentuk frekuensi, misalnya klasifikasi teks berdasarkan jumlah kemunculan kata.
 
 3. **Bernoulli Naive Bayes**  
-   Digunakan untuk data biner, seperti data dengan nilai ya/tidak, benar/salah, atau 0/1.
-
----
+   Digunakan untuk data biner, yaitu data yang hanya memiliki dua kemungkinan nilai, seperti ya/tidak atau 0/1.
 
 ## 4. Kelebihan Naive Bayes
 
-Algoritma Naive Bayes memiliki beberapa kelebihan, yaitu:
+Kelebihan algoritma Naive Bayes antara lain:
 
-- Proses pelatihan dan prediksi sangat cepat.
-- Efisien secara komputasi.
-- Cocok digunakan pada dataset berdimensi tinggi.
-- Tidak membutuhkan data latih yang terlalu besar.
-- Cukup baik digunakan untuk klasifikasi sederhana maupun menengah.
+- Proses komputasi cepat dan efisien.
+- Mudah digunakan untuk klasifikasi data.
+- Cocok untuk dataset sederhana maupun dataset berdimensi cukup tinggi.
+- Tidak membutuhkan data latih yang terlalu besar untuk menghasilkan performa yang cukup baik.
+- Dapat diimplementasikan dengan mudah menggunakan library Python seperti scikit-learn.
 
 ---
 
 # TUGAS
 
+## Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)
+
 ## 5. Deskripsi Proyek
 
-Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma **Gaussian Naive Bayes** dari library **scikit-learn** Python. Implementasi model dilakukan di dalam platform **KNIME Analytics Platform** dengan bantuan node **Python Script**.
+Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma **Gaussian Naive Bayes** dari library **scikit-learn Python** yang dijalankan di dalam platform **KNIME**. Dataset yang digunakan adalah dataset **IRIS**, yaitu dataset yang berisi data ukuran bunga Iris.
 
-Dataset yang digunakan adalah dataset **Iris**, yaitu dataset yang berisi data karakteristik bunga iris berdasarkan ukuran sepal dan petal. Dataset ini memiliki tiga kelas utama, yaitu:
+Dataset IRIS memiliki beberapa atribut numerik, yaitu:
 
-- **Iris-setosa**
-- **Iris-versicolor**
-- **Iris-virginica**
+- `sepal_length`
+- `sepal_width`
+- `petal_length`
+- `petal_width`
 
-Tujuan dari proyek ini adalah memprediksi jenis bunga iris berdasarkan fitur numerik yang tersedia dalam dataset.
+Selain itu, dataset ini juga memiliki kolom target atau label, yaitu:
 
----
+- `species`
 
-## 6. Tools yang Digunakan
+Kolom `species` berisi kelas jenis bunga Iris, seperti:
 
-Tools dan library yang digunakan dalam proyek ini adalah:
+- `Iris-setosa`
+- `Iris-versicolor`
+- `Iris-virginica`
 
-- **KNIME Analytics Platform**  
-  Digunakan untuk membuat alur kerja atau workflow secara visual.
+Tujuan dari proyek ini adalah membuat model klasifikasi yang dapat memprediksi jenis bunga Iris berdasarkan nilai fitur sepal dan petal. Proses pembuatan model dilakukan dengan menggabungkan workflow visual di KNIME dan pemrograman Python menggunakan node **Python Script**.
 
-- **Python Script Node**  
-  Digunakan untuk menjalankan kode Python di dalam workflow KNIME.
+## 6. Visualisasi Workflow
 
-- **Pandas**  
-  Digunakan untuk mengolah data dalam bentuk DataFrame.
+![Workflow KNIME](images/pertemuan10/01-workflow-knime.png)
 
-- **Scikit-learn**  
-  Digunakan untuk membangun model machine learning menggunakan algoritma Gaussian Naive Bayes.
+Contoh gambar yang dimasukkan adalah workflow lengkap yang menampilkan urutan node:
 
-- **GaussianNB**  
-  Model Naive Bayes dari library scikit-learn yang cocok untuk data numerik kontinu.
+```text
+CSV Reader -> Table Partitioner -> Normalizer -> Normalizer (Apply) -> Python Script -> Scorer -> Table View
+```
 
----
+**Keterangan gambar:**
 
-## 7. Langkah-Langkah Pembuatan Workflow
-
-Berikut adalah tampilan keseluruhan workflow KNIME yang digunakan dalam proyek klasifikasi Naive Bayes.
-
-![Gambar 1. Workflow utama KNIME](images/workflow_knime.png)
-
-*Keterangan: Workflow terdiri dari node CSV Reader, Table Partitioner, Normalizer, Normalizer Apply, Python Script, Scorer, dan Table View.*
+> Gambar 1. Workflow klasifikasi Naive Bayes menggunakan KNIME dan Python Script.
 
 ---
 
-### 7.1 Membaca Data dengan CSV Reader
+# Langkah-Langkah Pembuatan Workflow
+
+## 7. Membaca Data Menggunakan CSV Reader
 
 **Node:** CSV Reader
 
 **Fungsi:**  
-Node CSV Reader digunakan untuk mengimpor dataset Iris ke dalam environment KNIME.
+Node CSV Reader digunakan untuk membaca dataset IRIS dari file CSV ke dalam lingkungan kerja KNIME. File yang dibaca berisi data bunga Iris dengan beberapa kolom fitur numerik dan satu kolom target.
 
 **Konfigurasi:**  
-Dataset dibaca dari direktori lokal komputer. File yang digunakan adalah file dataset Iris dalam format CSV. Pengaturan pembacaan data dapat disesuaikan dengan struktur file, seperti pemisah kolom, nama kolom, dan tipe data.
-
-![Gambar 2. Konfigurasi CSV Reader](images/csv_reader.png)
-
-*Keterangan: Node CSV Reader digunakan untuk membaca dataset Iris dari file CSV.*
+Pada node CSV Reader, file dataset dipilih dari direktori lokal komputer. Setelah file berhasil dibaca, data akan masuk ke dalam KNIME dan dapat digunakan pada proses selanjutnya.
 
 ---
 
-### 7.2 Membagi Data Latih dan Data Uji dengan Table Partitioner
+## 8. Membagi Data Latih dan Data Uji Menggunakan Table Partitioner
 
 **Node:** Table Partitioner
 
 **Fungsi:**  
-Node Table Partitioner digunakan untuk membagi dataset menjadi dua bagian, yaitu:
+Node Table Partitioner digunakan untuk membagi dataset menjadi dua bagian, yaitu data latih dan data uji. Data latih digunakan untuk melatih model, sedangkan data uji digunakan untuk menguji kemampuan model dalam melakukan prediksi.
 
-- Data latih (*training data*)
-- Data uji (*testing data*)
+**Konfigurasi:**
 
-**Konfigurasi:**  
-Pembagian data dilakukan menggunakan metode **Relative (%)** dengan rasio **70%** untuk data latih dan **30%** untuk data uji. Strategi sampling yang digunakan adalah **Random**, sehingga data dibagi secara acak.
+- Partition type: **Relative (%)**
+- Relative size: **60**
+- Sampling strategy: **Random**
 
-Data dari port atas digunakan sebagai data latih, sedangkan data dari port bawah digunakan sebagai data uji.
+Berdasarkan konfigurasi tersebut, sebanyak **60% data** digunakan sebagai data latih, sedangkan **40% data** digunakan sebagai data uji. Strategi sampling yang digunakan adalah **Random**, sehingga pembagian data dilakukan secara acak.
 
-![Gambar 3. Konfigurasi Table Partitioner](images/table_partitioner.png)
+Pembagian ini penting agar model tidak hanya menghafal data, tetapi juga dapat diuji menggunakan data yang berbeda dari data latih.
 
-*Keterangan: Dataset dibagi menjadi 70% data latih dan 30% data uji dengan metode random sampling.*
+![Konfigurasi Table Partitioner](images/pertemuan10/02-table-partitioner.png)
+
+**Keterangan gambar:**
+
+> Gambar 2. Konfigurasi Table Partitioner dengan pembagian 60% data latih dan 40% data uji.
 
 ---
 
-### 7.3 Normalisasi Data Latih dengan Normalizer
+## 9. Normalisasi Data Latih Menggunakan Normalizer
 
 **Node:** Normalizer
 
 **Fungsi:**  
-Node Normalizer digunakan untuk mengubah skala nilai fitur numerik agar berada dalam rentang yang seragam. Normalisasi penting dilakukan agar tidak ada fitur yang mendominasi proses klasifikasi hanya karena memiliki skala angka yang lebih besar.
+Node Normalizer digunakan untuk mengubah skala nilai pada fitur numerik agar berada dalam rentang yang sama. Normalisasi dilakukan agar fitur dengan skala nilai yang lebih besar tidak mendominasi proses pembelajaran model.
+
+**Kolom yang dinormalisasi:**
+
+- `sepal_length`
+- `sepal_width`
+- `petal_length`
+- `petal_width`
 
 **Konfigurasi:**  
-Metode normalisasi yang digunakan adalah **Min-max normalization** dengan rentang nilai dari **0 hingga 1**.
+Pada proyek ini, kolom numerik dipilih secara manual pada bagian **Includes**. Proses normalisasi dilakukan ke dalam rentang nilai **0 sampai 1**. Hasil dari node ini adalah data latih yang sudah dinormalisasi dan model normalisasi yang berisi informasi skala dari data latih.
 
-Node ini menghasilkan data latih yang telah dinormalisasi serta model normalisasi yang menyimpan parameter minimum dan maksimum dari data latih.
+![Konfigurasi Normalizer](images/pertemuan10/03-normalizer.png)
 
-![Gambar 4. Konfigurasi Normalizer](images/normalizer.png)
+**Keterangan gambar:**
 
-*Keterangan: Data latih dinormalisasi menggunakan metode Min-Max Normalization dengan rentang nilai 0 sampai 1.*
+> Gambar 3. Konfigurasi Normalizer pada kolom numerik dataset IRIS.
 
 ---
 
-### 7.4 Normalisasi Data Uji dengan Normalizer Apply
+## 10. Menerapkan Normalisasi ke Data Uji Menggunakan Normalizer Apply
 
 **Node:** Normalizer (Apply)
 
 **Fungsi:**  
-Node Normalizer Apply digunakan untuk menerapkan model normalisasi dari data latih ke data uji.
+Node Normalizer Apply digunakan untuk menerapkan rumus normalisasi dari data latih ke data uji. Dengan cara ini, data uji akan memiliki skala yang sama dengan data latih.
 
 **Konfigurasi:**  
-Node ini menerima input model normalisasi dari node Normalizer melalui jalur model. Data uji kemudian dinormalisasi menggunakan parameter yang sama dengan data latih.
+Node ini menerima dua input, yaitu:
 
-Langkah ini merupakan praktik yang baik dalam machine learning karena dapat mencegah terjadinya **data leakage**, yaitu kebocoran informasi dari data uji ke proses pelatihan model.
+1. Model normalisasi dari node **Normalizer**.
+2. Data uji dari hasil pembagian node **Table Partitioner**.
 
-![Gambar 5. Konfigurasi Normalizer Apply](images/normalizer_apply.png)
-
-*Keterangan: Model normalisasi dari data latih diterapkan pada data uji agar skala data tetap konsisten.*
+Penggunaan Normalizer Apply merupakan langkah yang penting karena dapat mencegah terjadinya **data leakage**. Data leakage adalah kondisi ketika informasi dari data uji secara tidak langsung ikut digunakan dalam proses pelatihan model. Dengan menerapkan model normalisasi dari data latih ke data uji, proses evaluasi menjadi lebih tepat.
 
 ---
 
-### 7.5 Implementasi Naive Bayes dengan Python Script
+## 11. Implementasi Naive Bayes Menggunakan Python Script
 
 **Node:** Python Script
 
 **Fungsi:**  
-Node Python Script digunakan untuk menjalankan kode Python yang berfungsi melatih model Gaussian Naive Bayes dan melakukan prediksi terhadap data uji.
+Node Python Script digunakan untuk menjalankan kode Python di dalam KNIME. Pada node ini, algoritma **Gaussian Naive Bayes** digunakan untuk melatih model dan melakukan prediksi terhadap data uji.
 
 **Proses yang dilakukan:**
 
-1. Membaca data latih dan data uji dari input KNIME.
-2. Memisahkan fitur dan target.
-3. Melatih model Gaussian Naive Bayes menggunakan data latih.
-4. Melakukan prediksi terhadap data uji.
-5. Menambahkan hasil prediksi ke dalam kolom baru.
-6. Mengirim hasil akhir kembali ke output KNIME.
-7. Menampilkan laporan evaluasi menggunakan `classification_report`.
+1. Membaca data training dan testing dari input KNIME.
+2. Memisahkan kolom fitur dan kolom label/target.
+3. Membuat model Gaussian Naive Bayes.
+4. Melatih model menggunakan data latih.
+5. Melakukan prediksi terhadap data uji.
+6. Menambahkan hasil prediksi ke dalam kolom baru bernama `hasil_prediksi`.
+7. Mengirim hasil akhir kembali ke KNIME.
+8. Menampilkan laporan evaluasi klasifikasi menggunakan `classification_report`.
 
-![Gambar 6. Node Python Script](images/python_script_node.png)
-
-*Keterangan: Node Python Script digunakan untuk menjalankan kode Gaussian Naive Bayes di dalam workflow KNIME.*
-
-![Gambar 7. Tampilan kode pada Python Script](images/python_script_code.png)
-
-*Keterangan: Script Python digunakan untuk membaca data, melatih model, melakukan prediksi, dan mengirim hasil kembali ke KNIME.*
-
----
-
-## 8. Script Python yang Digunakan
+### Script yang Digunakan
 
 ```python
 import knime.scripting.io as knio
@@ -212,163 +198,123 @@ import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import classification_report
 
-# Membaca data latih dan data uji dari input KNIME
+# Membaca data training dan testing dari input KNIME
 data_latih = knio.input_tables[0].to_pandas()
 data_uji = knio.input_tables[1].to_pandas()
 
-# Memisahkan fitur dan target pada data latih
+# Memisahkan kolom fitur dan kolom label/target
 fitur_latih = data_latih.iloc[:, :-1]
-target_latih = data_latih.iloc[:, -1]
+label_latih = data_latih.iloc[:, -1]
 
-# Memisahkan fitur dan target pada data uji
 fitur_uji = data_uji.iloc[:, :-1]
-target_uji = data_uji.iloc[:, -1]
+label_uji = data_uji.iloc[:, -1]
 
-# Membuat model Gaussian Naive Bayes
+# Membuat dan melatih model Naive Bayes Gaussian
 model_nb = GaussianNB()
-
-# Melatih model menggunakan data latih
-model_nb.fit(fitur_latih, target_latih)
+model_nb.fit(fitur_latih, label_latih)
 
 # Melakukan prediksi terhadap data uji
 hasil_prediksi = model_nb.predict(fitur_uji)
 
-# Menambahkan hasil prediksi ke dalam tabel data uji
+# Menambahkan hasil prediksi ke dalam data uji
 hasil_akhir = data_uji.copy()
-hasil_akhir["prediction"] = hasil_prediksi
+hasil_akhir["hasil_prediksi"] = hasil_prediksi
 
 # Mengirim hasil akhir kembali ke KNIME
 knio.output_tables[0] = knio.Table.from_pandas(hasil_akhir)
 
 # Menampilkan laporan evaluasi klasifikasi
-print(classification_report(target_uji, hasil_prediksi))
+print(classification_report(label_uji, hasil_prediksi))
 ```
 
----
+### Penjelasan Script
 
-## 9. Penjelasan Script
+Pada script tersebut, data latih dan data uji dibaca dari input node Python Script menggunakan `knio.input_tables`. Data tersebut kemudian diubah menjadi dataframe pandas agar dapat diproses menggunakan library Python.
 
-Pada script tersebut, data dari KNIME dibaca menggunakan `knio.input_tables`. Input pertama digunakan sebagai data latih, sedangkan input kedua digunakan sebagai data uji.
+Selanjutnya, data dipisahkan menjadi fitur dan label. Fitur diambil dari semua kolom kecuali kolom terakhir, sedangkan label diambil dari kolom terakhir. Dalam dataset ini, kolom label adalah `species`.
 
-Selanjutnya, data dipisahkan menjadi fitur dan target. Fitur diambil dari semua kolom kecuali kolom terakhir, sedangkan target diambil dari kolom terakhir. Pada dataset Iris, kolom terakhir umumnya berisi label kelas atau spesies bunga.
+Model dibuat menggunakan `GaussianNB()` dari library `sklearn.naive_bayes`. Setelah model dilatih menggunakan data latih, model digunakan untuk memprediksi data uji. Hasil prediksi tersebut kemudian ditambahkan ke dataframe data uji dalam kolom baru bernama `hasil_prediksi`.
 
-Model yang digunakan adalah **GaussianNB**, yaitu implementasi Gaussian Naive Bayes dari library scikit-learn. Model dilatih menggunakan data latih, kemudian digunakan untuk memprediksi kelas dari data uji.
-
-Hasil prediksi kemudian ditambahkan ke dalam data uji sebagai kolom baru bernama `prediction`. Data hasil prediksi tersebut dikirim kembali ke KNIME sebagai output tabel.
-
-Selain itu, fungsi `classification_report` digunakan untuk menampilkan metrik evaluasi model seperti precision, recall, f1-score, dan support.
-
-![Gambar 8. Output Classification Report](images/classification_report.png)
-
-*Keterangan: Classification report menampilkan nilai precision, recall, f1-score, support, dan accuracy dari model.*
+Output dari Python Script dikirim kembali ke KNIME dalam bentuk tabel menggunakan `knio.Table.from_pandas()`.
 
 ---
 
-## 10. Evaluasi Model dengan Scorer
-
-**Node:** Scorer
-
-**Fungsi:**  
-Node Scorer digunakan untuk membandingkan label asli dengan hasil prediksi model. Pada proyek ini, label asli adalah kolom **species**, sedangkan hasil prediksi adalah kolom **prediction**.
-
-Metrik yang digunakan untuk mengevaluasi model antara lain:
-
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-score**
-- **Confusion Matrix**
-- **Cohen's Kappa**
-
-![Gambar 9. Hasil evaluasi pada Node Scorer](images/scorer.png)
-
-*Keterangan: Node Scorer digunakan untuk membandingkan kolom species sebagai label asli dengan kolom prediction sebagai hasil prediksi model.*
-
----
-
-## 11. Hasil Evaluasi
-
-Berdasarkan hasil evaluasi model, diperoleh nilai sebagai berikut:
-
-- **Accuracy:** 0.956 atau 95,6%
-- **Cohen's Kappa:** 0.933
-
-### Confusion Matrix
-
-| Kelas Aktual | Hasil Prediksi Benar | Kesalahan Prediksi |
-|---|---:|---:|
-| Iris-setosa | 16 | 0 |
-| Iris-versicolor | 16 | 1 |
-| Iris-virginica | 11 | 1 |
-
-### Interpretasi Hasil
-
-Model berhasil mengklasifikasikan kelas **Iris-setosa** dengan sangat baik tanpa kesalahan. Hal ini menunjukkan bahwa karakteristik Iris-setosa cukup berbeda dibandingkan dua kelas lainnya.
-
-Kesalahan klasifikasi hanya terjadi pada kelas **Iris-versicolor** dan **Iris-virginica**. Hal tersebut wajar karena kedua kelas ini memiliki karakteristik ukuran sepal dan petal yang lebih mirip dibandingkan dengan Iris-setosa.
-
-Secara umum, model menunjukkan performa yang sangat baik karena mampu mencapai akurasi sebesar **95,6%**.
-
----
-
-## 12. Visualisasi Tabel Hasil dengan Table View
-
-![Gambar 10. Tabel hasil prediksi pada Table View](images/table_view.png)
-
-*Keterangan: Table View menampilkan data uji beserta kolom label asli dan kolom hasil prediksi.*
+## 12. Menampilkan Hasil Prediksi Menggunakan Table View
 
 **Node:** Table View
 
 **Fungsi:**  
-Node Table View digunakan untuk menampilkan hasil akhir dari proses klasifikasi dalam bentuk tabel interaktif.
+Node Table View digunakan untuk menampilkan hasil akhir dari proses klasifikasi. Pada tabel ini, data uji ditampilkan bersama label asli dan hasil prediksi model.
 
-Tabel hasil berisi data uji yang telah dinormalisasi, label asli, serta kolom hasil prediksi. Dengan adanya kolom `prediction`, pengguna dapat melihat secara langsung apakah hasil prediksi model sesuai dengan label sebenarnya.
+**Kolom yang ditampilkan:**
 
----
+- `sepal_length`
+- `sepal_width`
+- `petal_length`
+- `petal_width`
+- `species`
+- `hasil_prediksi`
 
-## 13. Kesimpulan
+Kolom `species` menunjukkan label asli dari dataset, sedangkan kolom `hasil_prediksi` menunjukkan hasil prediksi yang dihasilkan oleh model Gaussian Naive Bayes.
 
-Berdasarkan proyek yang telah dilakukan, dapat disimpulkan bahwa algoritma **Gaussian Naive Bayes** dapat digunakan dengan baik untuk melakukan klasifikasi pada dataset Iris. Integrasi antara KNIME dan Python memudahkan proses penambangan data karena KNIME menyediakan workflow visual, sedangkan Python memberikan fleksibilitas dalam penggunaan library machine learning.
+![Hasil Table View](images/pertemuan10/04-table-view-result.png)
 
-Model yang dibangun mampu mencapai akurasi sebesar **95,6%**, sehingga dapat dikatakan memiliki performa yang sangat baik. Kelas Iris-setosa berhasil diklasifikasikan dengan sempurna, sedangkan sedikit kesalahan terjadi pada kelas Iris-versicolor dan Iris-virginica karena kemiripan karakteristik antar keduanya.
+Screenshot Table View perlu dimasukkan karena menjadi bukti bahwa Python Script berhasil menghasilkan kolom prediksi baru, yaitu `hasil_prediksi`.
 
-Dengan demikian, proyek ini berhasil menunjukkan penerapan algoritma Naive Bayes dalam proses klasifikasi data menggunakan KNIME dan Python Sklearn.
+**Keterangan gambar:**
 
----
-
-## 14. Panduan Nama File Gambar
-
-Agar gambar dapat muncul di file Markdown, simpan semua screenshot ke dalam folder bernama `images` yang berada satu lokasi dengan file laporan Markdown.
-
-Struktur folder yang disarankan:
-
-```text
-laporan_naive_bayes_knime_python.md
-images/
-├── workflow_knime.png
-├── csv_reader.png
-├── table_partitioner.png
-├── normalizer.png
-├── normalizer_apply.png
-├── python_script_node.png
-├── python_script_code.png
-├── classification_report.png
-├── scorer.png
-└── table_view.png
-```
-
-Jika nama file gambar berbeda, sesuaikan bagian alamat gambar di laporan. Contohnya:
-
-```md
-![Gambar 1. Workflow utama KNIME](images/workflow_knime.png)
-```
-
-Bagian `images/workflow_knime.png` dapat diganti sesuai nama file screenshot yang digunakan.
+> Gambar 4. Hasil prediksi model pada Table View dengan kolom `species` dan `hasil_prediksi`.
 
 ---
 
-## 15. Daftar Pustaka
+## 13. Evaluasi Model Menggunakan Scorer
 
-- Dokumentasi scikit-learn: Gaussian Naive Bayes.
-- Dokumentasi KNIME Analytics Platform.
-- Dataset Iris.
+**Node:** Scorer
+
+**Fungsi:**  
+Node Scorer digunakan untuk mengevaluasi performa model klasifikasi. Evaluasi dilakukan dengan membandingkan label asli dengan label hasil prediksi.
+
+**Konfigurasi:**
+
+- First column: `species`
+- Second column: `hasil_prediksi`
+- Sorting strategy: **Insertion order**
+- Missing values: **Ignore**
+
+Kolom `species` digunakan sebagai label asli, sedangkan kolom `hasil_prediksi` digunakan sebagai hasil prediksi dari model.
+
+![Konfigurasi Scorer](images/pertemuan10/05-scorer-config.png)
+
+**Keterangan gambar:**
+
+> Gambar 5. Konfigurasi Scorer untuk membandingkan kolom `species` dan `hasil_prediksi`.
+
+### Hasil Evaluasi Scorer
+
+![Hasil Scorer](images/pertemuan10/06-scorer-result.png)
+
+Screenshot hasil Scorer perlu dimasukkan karena bagian ini menunjukkan hasil evaluasi model, seperti confusion matrix, accuracy, dan metrik evaluasi lainnya. Hasil ini menjadi bukti bahwa model tidak hanya menghasilkan prediksi, tetapi juga dapat diukur tingkat keberhasilannya.
+
+**Keterangan gambar:**
+
+> Gambar 6. Hasil evaluasi model menggunakan Scorer.
+
+Jika pada hasil Scorer muncul nilai akurasi yang tinggi, maka model dapat dikatakan mampu melakukan klasifikasi data IRIS dengan baik. Apabila terdapat kesalahan prediksi, kesalahan tersebut biasanya terjadi antara kelas `Iris-versicolor` dan `Iris-virginica` karena kedua kelas tersebut memiliki karakteristik fitur yang cukup mirip.
+
+---
+
+# 14. Hasil dan Pembahasan
+
+Berdasarkan workflow yang telah dibuat, proses klasifikasi dataset IRIS menggunakan algoritma Gaussian Naive Bayes berhasil dijalankan di dalam KNIME. Proses dimulai dari pembacaan dataset menggunakan node CSV Reader, kemudian data dibagi menjadi data latih dan data uji menggunakan node Table Partitioner.
+
+Pada proyek ini, pembagian data dilakukan dengan rasio **60% data latih** dan **40% data uji** menggunakan strategi **Random**. Setelah itu, data latih dinormalisasi menggunakan node Normalizer pada kolom numerik, yaitu `sepal_length`, `sepal_width`, `petal_length`, dan `petal_width`.
+
+Data uji kemudian dinormalisasi menggunakan node Normalizer Apply. Hal ini dilakukan agar data uji memiliki skala yang sama dengan data latih, sehingga proses prediksi menjadi lebih konsisten dan terhindar dari data leakage.
+
+Model Gaussian Naive Bayes dibuat dan dijalankan melalui node Python Script. Model dilatih menggunakan data latih, kemudian digunakan untuk memprediksi data uji. Hasil prediksi ditambahkan ke dalam tabel dengan nama kolom `hasil_prediksi`.
+
+Hasil akhir dapat dilihat melalui node Table View. Pada Table View, terdapat kolom `species` sebagai label asli dan kolom `hasil_prediksi` sebagai hasil prediksi dari model. Selanjutnya, evaluasi model dilakukan menggunakan node Scorer dengan membandingkan kolom `species` dan `hasil_prediksi`.
+
+Dari proses tersebut, dapat diketahui apakah model berhasil melakukan klasifikasi dengan baik. Jika sebagian besar nilai pada kolom `hasil_prediksi` sama dengan nilai pada kolom `species`, maka model memiliki performa klasifikasi yang baik.
+
+---

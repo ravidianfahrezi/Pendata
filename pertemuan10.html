@@ -207,6 +207,8 @@
 <li class="toctree-l1"><a class="reference internal" href="uts.html">UTS</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)</a></li>
 
+
+
 </ul>
 
     </div>
@@ -403,42 +405,37 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pertemuan-10">Pertemuan 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pertemuan-10-naive-bayes">Pertemuan 10: Naive Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-naive-bayes">1. Pengertian Naive Bayes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-teorema-bayes">2. Rumus Teorema Bayes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keterangan">Keterangan:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-teorema-bayes">2. Rumus Teorema Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-naive-bayes">3. Jenis-Jenis Naive Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kelebihan-naive-bayes">4. Kelebihan Naive Bayes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-proyek">5. Deskripsi Proyek</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-yang-digunakan">6. Tools yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuatan-workflow">7. Langkah-Langkah Pembuatan Workflow</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-dengan-csv-reader">7.1 Membaca Data dengan CSV Reader</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-latih-dan-data-uji-dengan-table-partitioner">7.2 Membagi Data Latih dan Data Uji dengan Table Partitioner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-latih-dengan-normalizer">7.3 Normalisasi Data Latih dengan Normalizer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-uji-dengan-normalizer-apply">7.4 Normalisasi Data Uji dengan Normalizer Apply</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-naive-bayes-dengan-python-script">7.5 Implementasi Naive Bayes dengan Python Script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-workflow">6. Visualisasi Workflow</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#script-python-yang-digunakan">8. Script Python yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-script">9. Penjelasan Script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model-dengan-scorer">10. Evaluasi Model dengan Scorer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-evaluasi">11. Hasil Evaluasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confusion-matrix">Confusion Matrix</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-hasil">Interpretasi Hasil</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuatan-workflow">Langkah-Langkah Pembuatan Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-menggunakan-csv-reader">7. Membaca Data Menggunakan CSV Reader</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-latih-dan-data-uji-menggunakan-table-partitioner">8. Membagi Data Latih dan Data Uji Menggunakan Table Partitioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-latih-menggunakan-normalizer">9. Normalisasi Data Latih Menggunakan Normalizer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menerapkan-normalisasi-ke-data-uji-menggunakan-normalizer-apply">10. Menerapkan Normalisasi ke Data Uji Menggunakan Normalizer Apply</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-naive-bayes-menggunakan-python-script">11. Implementasi Naive Bayes Menggunakan Python Script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#script-yang-digunakan">Script yang Digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-script">Penjelasan Script</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-tabel-hasil-dengan-table-view">12. Visualisasi Tabel Hasil dengan Table View</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">13. Kesimpulan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panduan-nama-file-gambar">14. Panduan Nama File Gambar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-pustaka">15. Daftar Pustaka</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-prediksi-menggunakan-table-view">12. Menampilkan Hasil Prediksi Menggunakan Table View</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model-menggunakan-scorer">13. Evaluasi Model Menggunakan Scorer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-evaluasi-scorer">Hasil Evaluasi Scorer</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-dan-pembahasan">14. Hasil dan Pembahasan</a></li>
 </ul>
 
             </nav>
@@ -453,333 +450,285 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="laporan-proyek-klasifikasi-naive-bayes-menggunakan-knime-dan-python-sklearn">
 <h1>Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)<a class="headerlink" href="#laporan-proyek-klasifikasi-naive-bayes-menggunakan-knime-dan-python-sklearn" title="Link to this heading">#</a></h1>
-<section id="pertemuan-10">
-<h2>Pertemuan 10<a class="headerlink" href="#pertemuan-10" title="Link to this heading">#</a></h2>
+<section id="pertemuan-10-naive-bayes">
+<h2>Pertemuan 10: Naive Bayes<a class="headerlink" href="#pertemuan-10-naive-bayes" title="Link to this heading">#</a></h2>
 </section>
-<section id="naive-bayes">
-<h2>Naive Bayes<a class="headerlink" href="#naive-bayes" title="Link to this heading">#</a></h2>
-</section>
-<hr class="docutils" />
 <section id="pengertian-naive-bayes">
 <h2>1. Pengertian Naive Bayes<a class="headerlink" href="#pengertian-naive-bayes" title="Link to this heading">#</a></h2>
-<p>Naive Bayes adalah algoritma klasifikasi berbasis probabilitas yang menggunakan konsep dari Teorema Bayes. Algoritma ini disebut <em>Naive</em> atau naif karena mengasumsikan bahwa setiap fitur dalam data bersifat independen atau tidak saling memengaruhi satu sama lain.</p>
-<p>Meskipun pada kenyataannya antar fitur dalam sebuah dataset sering kali saling berkaitan, asumsi sederhana ini membuat Naive Bayes tetap menjadi algoritma yang cepat, efisien, dan cukup baik untuk berbagai kasus klasifikasi.</p>
+<p>Naive Bayes adalah algoritma klasifikasi berbasis probabilitas yang menggunakan Teorema Bayes. Algoritma ini disebut “Naive” karena memiliki asumsi bahwa setiap fitur atau atribut pada data bersifat independen, yaitu tidak saling memengaruhi satu sama lain. Walaupun dalam kondisi nyata fitur-fitur dalam dataset sering kali memiliki hubungan, Naive Bayes tetap banyak digunakan karena sederhana, cepat, dan cukup baik untuk berbagai kasus klasifikasi.</p>
+<p>Pada proyek ini, jenis Naive Bayes yang digunakan adalah <strong>Gaussian Naive Bayes</strong>. Metode ini cocok digunakan karena dataset IRIS memiliki fitur berupa angka kontinu, seperti panjang sepal, lebar sepal, panjang petal, dan lebar petal.</p>
 </section>
-<hr class="docutils" />
 <section id="rumus-teorema-bayes">
 <h2>2. Rumus Teorema Bayes<a class="headerlink" href="#rumus-teorema-bayes" title="Link to this heading">#</a></h2>
 <p>Rumus dasar Teorema Bayes adalah sebagai berikut:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>P(C|X) = (P(X|C) * P(C)) / P(X)
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>P(C|X) = (P(X|C) x P(C)) / P(X)
 </pre></div>
 </div>
-<section id="keterangan">
-<h3>Keterangan:<a class="headerlink" href="#keterangan" title="Link to this heading">#</a></h3>
+<p>Keterangan:</p>
 <ul class="simple">
-<li><p><strong>P(C|X)</strong>: Peluang kelas C jika diketahui atribut X (<em>posterior</em>).</p></li>
-<li><p><strong>P(X|C)</strong>: Peluang atribut X jika diketahui kelas C (<em>likelihood</em>).</p></li>
-<li><p><strong>P(C)</strong>: Peluang awal munculnya kelas C (<em>prior</em>).</p></li>
-<li><p><strong>P(X)</strong>: Probabilitas kemunculan atribut X (<em>evidence</em>).</p></li>
+<li><p><strong>P(C|X)</strong>: peluang suatu data termasuk ke dalam kelas C berdasarkan atribut X.</p></li>
+<li><p><strong>P(X|C)</strong>: peluang munculnya atribut X jika diketahui kelasnya adalah C.</p></li>
+<li><p><strong>P(C)</strong>: peluang awal kemunculan kelas C.</p></li>
+<li><p><strong>P(X)</strong>: peluang kemunculan atribut X.</p></li>
 </ul>
 </section>
-</section>
-<hr class="docutils" />
 <section id="jenis-jenis-naive-bayes">
 <h2>3. Jenis-Jenis Naive Bayes<a class="headerlink" href="#jenis-jenis-naive-bayes" title="Link to this heading">#</a></h2>
-<p>Beberapa jenis utama algoritma Naive Bayes adalah sebagai berikut:</p>
+<p>Beberapa jenis utama Naive Bayes adalah sebagai berikut:</p>
 <ol class="arabic simple">
 <li><p><strong>Gaussian Naive Bayes</strong><br />
-Digunakan untuk data dengan fitur numerik kontinu, seperti panjang dan lebar sepal atau petal pada dataset Iris.</p></li>
+Digunakan untuk data numerik kontinu. Contohnya adalah dataset IRIS yang memiliki atribut <code class="docutils literal notranslate"><span class="pre">sepal_length</span></code>, <code class="docutils literal notranslate"><span class="pre">sepal_width</span></code>, <code class="docutils literal notranslate"><span class="pre">petal_length</span></code>, dan <code class="docutils literal notranslate"><span class="pre">petal_width</span></code>.</p></li>
 <li><p><strong>Multinomial Naive Bayes</strong><br />
-Umumnya digunakan untuk data teks, misalnya klasifikasi dokumen berdasarkan frekuensi kemunculan kata.</p></li>
+Digunakan untuk data berbentuk frekuensi, misalnya klasifikasi teks berdasarkan jumlah kemunculan kata.</p></li>
 <li><p><strong>Bernoulli Naive Bayes</strong><br />
-Digunakan untuk data biner, seperti data dengan nilai ya/tidak, benar/salah, atau 0/1.</p></li>
+Digunakan untuk data biner, yaitu data yang hanya memiliki dua kemungkinan nilai, seperti ya/tidak atau 0/1.</p></li>
 </ol>
 </section>
-<hr class="docutils" />
 <section id="kelebihan-naive-bayes">
 <h2>4. Kelebihan Naive Bayes<a class="headerlink" href="#kelebihan-naive-bayes" title="Link to this heading">#</a></h2>
-<p>Algoritma Naive Bayes memiliki beberapa kelebihan, yaitu:</p>
+<p>Kelebihan algoritma Naive Bayes antara lain:</p>
 <ul class="simple">
-<li><p>Proses pelatihan dan prediksi sangat cepat.</p></li>
-<li><p>Efisien secara komputasi.</p></li>
-<li><p>Cocok digunakan pada dataset berdimensi tinggi.</p></li>
-<li><p>Tidak membutuhkan data latih yang terlalu besar.</p></li>
-<li><p>Cukup baik digunakan untuk klasifikasi sederhana maupun menengah.</p></li>
+<li><p>Proses komputasi cepat dan efisien.</p></li>
+<li><p>Mudah digunakan untuk klasifikasi data.</p></li>
+<li><p>Cocok untuk dataset sederhana maupun dataset berdimensi cukup tinggi.</p></li>
+<li><p>Tidak membutuhkan data latih yang terlalu besar untuk menghasilkan performa yang cukup baik.</p></li>
+<li><p>Dapat diimplementasikan dengan mudah menggunakan library Python seperti scikit-learn.</p></li>
 </ul>
 </section>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="tugas">
 <h1>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+</section>
 <section id="deskripsi-proyek">
 <h2>5. Deskripsi Proyek<a class="headerlink" href="#deskripsi-proyek" title="Link to this heading">#</a></h2>
-<p>Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma <strong>Gaussian Naive Bayes</strong> dari library <strong>scikit-learn</strong> Python. Implementasi model dilakukan di dalam platform <strong>KNIME Analytics Platform</strong> dengan bantuan node <strong>Python Script</strong>.</p>
-<p>Dataset yang digunakan adalah dataset <strong>Iris</strong>, yaitu dataset yang berisi data karakteristik bunga iris berdasarkan ukuran sepal dan petal. Dataset ini memiliki tiga kelas utama, yaitu:</p>
+<p>Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma <strong>Gaussian Naive Bayes</strong> dari library <strong>scikit-learn Python</strong> yang dijalankan di dalam platform <strong>KNIME</strong>. Dataset yang digunakan adalah dataset <strong>IRIS</strong>, yaitu dataset yang berisi data ukuran bunga Iris.</p>
+<p>Dataset IRIS memiliki beberapa atribut numerik, yaitu:</p>
 <ul class="simple">
-<li><p><strong>Iris-setosa</strong></p></li>
-<li><p><strong>Iris-versicolor</strong></p></li>
-<li><p><strong>Iris-virginica</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_width</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_width</span></code></p></li>
 </ul>
-<p>Tujuan dari proyek ini adalah memprediksi jenis bunga iris berdasarkan fitur numerik yang tersedia dalam dataset.</p>
+<p>Selain itu, dataset ini juga memiliki kolom target atau label, yaitu:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">species</span></code></p></li>
+</ul>
+<p>Kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> berisi kelas jenis bunga Iris, seperti:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Iris-setosa</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Iris-versicolor</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Iris-virginica</span></code></p></li>
+</ul>
+<p>Tujuan dari proyek ini adalah membuat model klasifikasi yang dapat memprediksi jenis bunga Iris berdasarkan nilai fitur sepal dan petal. Proses pembuatan model dilakukan dengan menggabungkan workflow visual di KNIME dan pemrograman Python menggunakan node <strong>Python Script</strong>.</p>
+</section>
+<section id="visualisasi-workflow">
+<h2>6. Visualisasi Workflow<a class="headerlink" href="#visualisasi-workflow" title="Link to this heading">#</a></h2>
+<p><img alt="Workflow KNIME" src="_images/01-workflow-knime.png" /></p>
+<p>Contoh gambar yang dimasukkan adalah workflow lengkap yang menampilkan urutan node:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>CSV Reader -&gt; Table Partitioner -&gt; Normalizer -&gt; Normalizer (Apply) -&gt; Python Script -&gt; Scorer -&gt; Table View
+</pre></div>
+</div>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 1. Workflow klasifikasi Naive Bayes menggunakan KNIME dan Python Script.</p>
+</div></blockquote>
+</section>
 </section>
 <hr class="docutils" />
-<section id="tools-yang-digunakan">
-<h2>6. Tools yang Digunakan<a class="headerlink" href="#tools-yang-digunakan" title="Link to this heading">#</a></h2>
-<p>Tools dan library yang digunakan dalam proyek ini adalah:</p>
-<ul class="simple">
-<li><p><strong>KNIME Analytics Platform</strong><br />
-Digunakan untuk membuat alur kerja atau workflow secara visual.</p></li>
-<li><p><strong>Python Script Node</strong><br />
-Digunakan untuk menjalankan kode Python di dalam workflow KNIME.</p></li>
-<li><p><strong>Pandas</strong><br />
-Digunakan untuk mengolah data dalam bentuk DataFrame.</p></li>
-<li><p><strong>Scikit-learn</strong><br />
-Digunakan untuk membangun model machine learning menggunakan algoritma Gaussian Naive Bayes.</p></li>
-<li><p><strong>GaussianNB</strong><br />
-Model Naive Bayes dari library scikit-learn yang cocok untuk data numerik kontinu.</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="langkah-langkah-pembuatan-workflow">
-<h2>7. Langkah-Langkah Pembuatan Workflow<a class="headerlink" href="#langkah-langkah-pembuatan-workflow" title="Link to this heading">#</a></h2>
-<p>Berikut adalah tampilan keseluruhan workflow KNIME yang digunakan dalam proyek klasifikasi Naive Bayes.</p>
-<p><img alt="Gambar 1. Workflow utama KNIME" src="images/workflow_knime.png" /></p>
-<p><em>Keterangan: Workflow terdiri dari node CSV Reader, Table Partitioner, Normalizer, Normalizer Apply, Python Script, Scorer, dan Table View.</em></p>
-<hr class="docutils" />
-<section id="membaca-data-dengan-csv-reader">
-<h3>7.1 Membaca Data dengan CSV Reader<a class="headerlink" href="#membaca-data-dengan-csv-reader" title="Link to this heading">#</a></h3>
+<section class="tex2jax_ignore mathjax_ignore" id="langkah-langkah-pembuatan-workflow">
+<h1>Langkah-Langkah Pembuatan Workflow<a class="headerlink" href="#langkah-langkah-pembuatan-workflow" title="Link to this heading">#</a></h1>
+<section id="membaca-data-menggunakan-csv-reader">
+<h2>7. Membaca Data Menggunakan CSV Reader<a class="headerlink" href="#membaca-data-menggunakan-csv-reader" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> CSV Reader</p>
 <p><strong>Fungsi:</strong><br />
-Node CSV Reader digunakan untuk mengimpor dataset Iris ke dalam environment KNIME.</p>
+Node CSV Reader digunakan untuk membaca dataset IRIS dari file CSV ke dalam lingkungan kerja KNIME. File yang dibaca berisi data bunga Iris dengan beberapa kolom fitur numerik dan satu kolom target.</p>
 <p><strong>Konfigurasi:</strong><br />
-Dataset dibaca dari direktori lokal komputer. File yang digunakan adalah file dataset Iris dalam format CSV. Pengaturan pembacaan data dapat disesuaikan dengan struktur file, seperti pemisah kolom, nama kolom, dan tipe data.</p>
-<p><img alt="Gambar 2. Konfigurasi CSV Reader" src="images/csv_reader.png" /></p>
-<p><em>Keterangan: Node CSV Reader digunakan untuk membaca dataset Iris dari file CSV.</em></p>
+Pada node CSV Reader, file dataset dipilih dari direktori lokal komputer. Setelah file berhasil dibaca, data akan masuk ke dalam KNIME dan dapat digunakan pada proses selanjutnya.</p>
 </section>
 <hr class="docutils" />
-<section id="membagi-data-latih-dan-data-uji-dengan-table-partitioner">
-<h3>7.2 Membagi Data Latih dan Data Uji dengan Table Partitioner<a class="headerlink" href="#membagi-data-latih-dan-data-uji-dengan-table-partitioner" title="Link to this heading">#</a></h3>
+<section id="membagi-data-latih-dan-data-uji-menggunakan-table-partitioner">
+<h2>8. Membagi Data Latih dan Data Uji Menggunakan Table Partitioner<a class="headerlink" href="#membagi-data-latih-dan-data-uji-menggunakan-table-partitioner" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> Table Partitioner</p>
 <p><strong>Fungsi:</strong><br />
-Node Table Partitioner digunakan untuk membagi dataset menjadi dua bagian, yaitu:</p>
+Node Table Partitioner digunakan untuk membagi dataset menjadi dua bagian, yaitu data latih dan data uji. Data latih digunakan untuk melatih model, sedangkan data uji digunakan untuk menguji kemampuan model dalam melakukan prediksi.</p>
+<p><strong>Konfigurasi:</strong></p>
 <ul class="simple">
-<li><p>Data latih (<em>training data</em>)</p></li>
-<li><p>Data uji (<em>testing data</em>)</p></li>
+<li><p>Partition type: <strong>Relative (%)</strong></p></li>
+<li><p>Relative size: <strong>60</strong></p></li>
+<li><p>Sampling strategy: <strong>Random</strong></p></li>
 </ul>
-<p><strong>Konfigurasi:</strong><br />
-Pembagian data dilakukan menggunakan metode <strong>Relative (%)</strong> dengan rasio <strong>70%</strong> untuk data latih dan <strong>30%</strong> untuk data uji. Strategi sampling yang digunakan adalah <strong>Random</strong>, sehingga data dibagi secara acak.</p>
-<p>Data dari port atas digunakan sebagai data latih, sedangkan data dari port bawah digunakan sebagai data uji.</p>
-<p><img alt="Gambar 3. Konfigurasi Table Partitioner" src="images/table_partitioner.png" /></p>
-<p><em>Keterangan: Dataset dibagi menjadi 70% data latih dan 30% data uji dengan metode random sampling.</em></p>
+<p>Berdasarkan konfigurasi tersebut, sebanyak <strong>60% data</strong> digunakan sebagai data latih, sedangkan <strong>40% data</strong> digunakan sebagai data uji. Strategi sampling yang digunakan adalah <strong>Random</strong>, sehingga pembagian data dilakukan secara acak.</p>
+<p>Pembagian ini penting agar model tidak hanya menghafal data, tetapi juga dapat diuji menggunakan data yang berbeda dari data latih.</p>
+<p><img alt="Konfigurasi Table Partitioner" src="_images/02-table-partitioner.png" /></p>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 2. Konfigurasi Table Partitioner dengan pembagian 60% data latih dan 40% data uji.</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="normalisasi-data-latih-dengan-normalizer">
-<h3>7.3 Normalisasi Data Latih dengan Normalizer<a class="headerlink" href="#normalisasi-data-latih-dengan-normalizer" title="Link to this heading">#</a></h3>
+<section id="normalisasi-data-latih-menggunakan-normalizer">
+<h2>9. Normalisasi Data Latih Menggunakan Normalizer<a class="headerlink" href="#normalisasi-data-latih-menggunakan-normalizer" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> Normalizer</p>
 <p><strong>Fungsi:</strong><br />
-Node Normalizer digunakan untuk mengubah skala nilai fitur numerik agar berada dalam rentang yang seragam. Normalisasi penting dilakukan agar tidak ada fitur yang mendominasi proses klasifikasi hanya karena memiliki skala angka yang lebih besar.</p>
+Node Normalizer digunakan untuk mengubah skala nilai pada fitur numerik agar berada dalam rentang yang sama. Normalisasi dilakukan agar fitur dengan skala nilai yang lebih besar tidak mendominasi proses pembelajaran model.</p>
+<p><strong>Kolom yang dinormalisasi:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_width</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_width</span></code></p></li>
+</ul>
 <p><strong>Konfigurasi:</strong><br />
-Metode normalisasi yang digunakan adalah <strong>Min-max normalization</strong> dengan rentang nilai dari <strong>0 hingga 1</strong>.</p>
-<p>Node ini menghasilkan data latih yang telah dinormalisasi serta model normalisasi yang menyimpan parameter minimum dan maksimum dari data latih.</p>
-<p><img alt="Gambar 4. Konfigurasi Normalizer" src="images/normalizer.png" /></p>
-<p><em>Keterangan: Data latih dinormalisasi menggunakan metode Min-Max Normalization dengan rentang nilai 0 sampai 1.</em></p>
+Pada proyek ini, kolom numerik dipilih secara manual pada bagian <strong>Includes</strong>. Proses normalisasi dilakukan ke dalam rentang nilai <strong>0 sampai 1</strong>. Hasil dari node ini adalah data latih yang sudah dinormalisasi dan model normalisasi yang berisi informasi skala dari data latih.</p>
+<p><img alt="Konfigurasi Normalizer" src="_images/03-normalizer.png" /></p>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 3. Konfigurasi Normalizer pada kolom numerik dataset IRIS.</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="normalisasi-data-uji-dengan-normalizer-apply">
-<h3>7.4 Normalisasi Data Uji dengan Normalizer Apply<a class="headerlink" href="#normalisasi-data-uji-dengan-normalizer-apply" title="Link to this heading">#</a></h3>
+<section id="menerapkan-normalisasi-ke-data-uji-menggunakan-normalizer-apply">
+<h2>10. Menerapkan Normalisasi ke Data Uji Menggunakan Normalizer Apply<a class="headerlink" href="#menerapkan-normalisasi-ke-data-uji-menggunakan-normalizer-apply" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> Normalizer (Apply)</p>
 <p><strong>Fungsi:</strong><br />
-Node Normalizer Apply digunakan untuk menerapkan model normalisasi dari data latih ke data uji.</p>
+Node Normalizer Apply digunakan untuk menerapkan rumus normalisasi dari data latih ke data uji. Dengan cara ini, data uji akan memiliki skala yang sama dengan data latih.</p>
 <p><strong>Konfigurasi:</strong><br />
-Node ini menerima input model normalisasi dari node Normalizer melalui jalur model. Data uji kemudian dinormalisasi menggunakan parameter yang sama dengan data latih.</p>
-<p>Langkah ini merupakan praktik yang baik dalam machine learning karena dapat mencegah terjadinya <strong>data leakage</strong>, yaitu kebocoran informasi dari data uji ke proses pelatihan model.</p>
-<p><img alt="Gambar 5. Konfigurasi Normalizer Apply" src="images/normalizer_apply.png" /></p>
-<p><em>Keterangan: Model normalisasi dari data latih diterapkan pada data uji agar skala data tetap konsisten.</em></p>
+Node ini menerima dua input, yaitu:</p>
+<ol class="arabic simple">
+<li><p>Model normalisasi dari node <strong>Normalizer</strong>.</p></li>
+<li><p>Data uji dari hasil pembagian node <strong>Table Partitioner</strong>.</p></li>
+</ol>
+<p>Penggunaan Normalizer Apply merupakan langkah yang penting karena dapat mencegah terjadinya <strong>data leakage</strong>. Data leakage adalah kondisi ketika informasi dari data uji secara tidak langsung ikut digunakan dalam proses pelatihan model. Dengan menerapkan model normalisasi dari data latih ke data uji, proses evaluasi menjadi lebih tepat.</p>
 </section>
 <hr class="docutils" />
-<section id="implementasi-naive-bayes-dengan-python-script">
-<h3>7.5 Implementasi Naive Bayes dengan Python Script<a class="headerlink" href="#implementasi-naive-bayes-dengan-python-script" title="Link to this heading">#</a></h3>
+<section id="implementasi-naive-bayes-menggunakan-python-script">
+<h2>11. Implementasi Naive Bayes Menggunakan Python Script<a class="headerlink" href="#implementasi-naive-bayes-menggunakan-python-script" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> Python Script</p>
 <p><strong>Fungsi:</strong><br />
-Node Python Script digunakan untuk menjalankan kode Python yang berfungsi melatih model Gaussian Naive Bayes dan melakukan prediksi terhadap data uji.</p>
+Node Python Script digunakan untuk menjalankan kode Python di dalam KNIME. Pada node ini, algoritma <strong>Gaussian Naive Bayes</strong> digunakan untuk melatih model dan melakukan prediksi terhadap data uji.</p>
 <p><strong>Proses yang dilakukan:</strong></p>
 <ol class="arabic simple">
-<li><p>Membaca data latih dan data uji dari input KNIME.</p></li>
-<li><p>Memisahkan fitur dan target.</p></li>
-<li><p>Melatih model Gaussian Naive Bayes menggunakan data latih.</p></li>
+<li><p>Membaca data training dan testing dari input KNIME.</p></li>
+<li><p>Memisahkan kolom fitur dan kolom label/target.</p></li>
+<li><p>Membuat model Gaussian Naive Bayes.</p></li>
+<li><p>Melatih model menggunakan data latih.</p></li>
 <li><p>Melakukan prediksi terhadap data uji.</p></li>
-<li><p>Menambahkan hasil prediksi ke dalam kolom baru.</p></li>
-<li><p>Mengirim hasil akhir kembali ke output KNIME.</p></li>
-<li><p>Menampilkan laporan evaluasi menggunakan <code class="docutils literal notranslate"><span class="pre">classification_report</span></code>.</p></li>
+<li><p>Menambahkan hasil prediksi ke dalam kolom baru bernama <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p></li>
+<li><p>Mengirim hasil akhir kembali ke KNIME.</p></li>
+<li><p>Menampilkan laporan evaluasi klasifikasi menggunakan <code class="docutils literal notranslate"><span class="pre">classification_report</span></code>.</p></li>
 </ol>
-<p><img alt="Gambar 6. Node Python Script" src="images/python_script_node.png" /></p>
-<p><em>Keterangan: Node Python Script digunakan untuk menjalankan kode Gaussian Naive Bayes di dalam workflow KNIME.</em></p>
-<p><img alt="Gambar 7. Tampilan kode pada Python Script" src="images/python_script_code.png" /></p>
-<p><em>Keterangan: Script Python digunakan untuk membaca data, melatih model, melakukan prediksi, dan mengirim hasil kembali ke KNIME.</em></p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="script-python-yang-digunakan">
-<h2>8. Script Python yang Digunakan<a class="headerlink" href="#script-python-yang-digunakan" title="Link to this heading">#</a></h2>
+<section id="script-yang-digunakan">
+<h3>Script yang Digunakan<a class="headerlink" href="#script-yang-digunakan" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">knime.scripting.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">knio</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.naive_bayes</span><span class="w"> </span><span class="kn">import</span> <span class="n">GaussianNB</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span>
 
-<span class="c1"># Membaca data latih dan data uji dari input KNIME</span>
+<span class="c1"># Membaca data training dan testing dari input KNIME</span>
 <span class="n">data_latih</span> <span class="o">=</span> <span class="n">knio</span><span class="o">.</span><span class="n">input_tables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span>
 <span class="n">data_uji</span> <span class="o">=</span> <span class="n">knio</span><span class="o">.</span><span class="n">input_tables</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">()</span>
 
-<span class="c1"># Memisahkan fitur dan target pada data latih</span>
+<span class="c1"># Memisahkan kolom fitur dan kolom label/target</span>
 <span class="n">fitur_latih</span> <span class="o">=</span> <span class="n">data_latih</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">target_latih</span> <span class="o">=</span> <span class="n">data_latih</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">label_latih</span> <span class="o">=</span> <span class="n">data_latih</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="c1"># Memisahkan fitur dan target pada data uji</span>
 <span class="n">fitur_uji</span> <span class="o">=</span> <span class="n">data_uji</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">target_uji</span> <span class="o">=</span> <span class="n">data_uji</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">label_uji</span> <span class="o">=</span> <span class="n">data_uji</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="c1"># Membuat model Gaussian Naive Bayes</span>
+<span class="c1"># Membuat dan melatih model Naive Bayes Gaussian</span>
 <span class="n">model_nb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-
-<span class="c1"># Melatih model menggunakan data latih</span>
-<span class="n">model_nb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">fitur_latih</span><span class="p">,</span> <span class="n">target_latih</span><span class="p">)</span>
+<span class="n">model_nb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">fitur_latih</span><span class="p">,</span> <span class="n">label_latih</span><span class="p">)</span>
 
 <span class="c1"># Melakukan prediksi terhadap data uji</span>
 <span class="n">hasil_prediksi</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">fitur_uji</span><span class="p">)</span>
 
-<span class="c1"># Menambahkan hasil prediksi ke dalam tabel data uji</span>
+<span class="c1"># Menambahkan hasil prediksi ke dalam data uji</span>
 <span class="n">hasil_akhir</span> <span class="o">=</span> <span class="n">data_uji</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">hasil_akhir</span><span class="p">[</span><span class="s2">&quot;prediction&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">hasil_prediksi</span>
+<span class="n">hasil_akhir</span><span class="p">[</span><span class="s2">&quot;hasil_prediksi&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">hasil_prediksi</span>
 
 <span class="c1"># Mengirim hasil akhir kembali ke KNIME</span>
 <span class="n">knio</span><span class="o">.</span><span class="n">output_tables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">knio</span><span class="o">.</span><span class="n">Table</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">hasil_akhir</span><span class="p">)</span>
 
 <span class="c1"># Menampilkan laporan evaluasi klasifikasi</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">target_uji</span><span class="p">,</span> <span class="n">hasil_prediksi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">label_uji</span><span class="p">,</span> <span class="n">hasil_prediksi</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>
-<hr class="docutils" />
 <section id="penjelasan-script">
-<h2>9. Penjelasan Script<a class="headerlink" href="#penjelasan-script" title="Link to this heading">#</a></h2>
-<p>Pada script tersebut, data dari KNIME dibaca menggunakan <code class="docutils literal notranslate"><span class="pre">knio.input_tables</span></code>. Input pertama digunakan sebagai data latih, sedangkan input kedua digunakan sebagai data uji.</p>
-<p>Selanjutnya, data dipisahkan menjadi fitur dan target. Fitur diambil dari semua kolom kecuali kolom terakhir, sedangkan target diambil dari kolom terakhir. Pada dataset Iris, kolom terakhir umumnya berisi label kelas atau spesies bunga.</p>
-<p>Model yang digunakan adalah <strong>GaussianNB</strong>, yaitu implementasi Gaussian Naive Bayes dari library scikit-learn. Model dilatih menggunakan data latih, kemudian digunakan untuk memprediksi kelas dari data uji.</p>
-<p>Hasil prediksi kemudian ditambahkan ke dalam data uji sebagai kolom baru bernama <code class="docutils literal notranslate"><span class="pre">prediction</span></code>. Data hasil prediksi tersebut dikirim kembali ke KNIME sebagai output tabel.</p>
-<p>Selain itu, fungsi <code class="docutils literal notranslate"><span class="pre">classification_report</span></code> digunakan untuk menampilkan metrik evaluasi model seperti precision, recall, f1-score, dan support.</p>
-<p><img alt="Gambar 8. Output Classification Report" src="images/classification_report.png" /></p>
-<p><em>Keterangan: Classification report menampilkan nilai precision, recall, f1-score, support, dan accuracy dari model.</em></p>
-</section>
-<hr class="docutils" />
-<section id="evaluasi-model-dengan-scorer">
-<h2>10. Evaluasi Model dengan Scorer<a class="headerlink" href="#evaluasi-model-dengan-scorer" title="Link to this heading">#</a></h2>
-<p><strong>Node:</strong> Scorer</p>
-<p><strong>Fungsi:</strong><br />
-Node Scorer digunakan untuk membandingkan label asli dengan hasil prediksi model. Pada proyek ini, label asli adalah kolom <strong>species</strong>, sedangkan hasil prediksi adalah kolom <strong>prediction</strong>.</p>
-<p>Metrik yang digunakan untuk mengevaluasi model antara lain:</p>
-<ul class="simple">
-<li><p><strong>Accuracy</strong></p></li>
-<li><p><strong>Precision</strong></p></li>
-<li><p><strong>Recall</strong></p></li>
-<li><p><strong>F1-score</strong></p></li>
-<li><p><strong>Confusion Matrix</strong></p></li>
-<li><p><strong>Cohen’s Kappa</strong></p></li>
-</ul>
-<p><img alt="Gambar 9. Hasil evaluasi pada Node Scorer" src="images/scorer.png" /></p>
-<p><em>Keterangan: Node Scorer digunakan untuk membandingkan kolom species sebagai label asli dengan kolom prediction sebagai hasil prediksi model.</em></p>
-</section>
-<hr class="docutils" />
-<section id="hasil-evaluasi">
-<h2>11. Hasil Evaluasi<a class="headerlink" href="#hasil-evaluasi" title="Link to this heading">#</a></h2>
-<p>Berdasarkan hasil evaluasi model, diperoleh nilai sebagai berikut:</p>
-<ul class="simple">
-<li><p><strong>Accuracy:</strong> 0.956 atau 95,6%</p></li>
-<li><p><strong>Cohen’s Kappa:</strong> 0.933</p></li>
-</ul>
-<section id="confusion-matrix">
-<h3>Confusion Matrix<a class="headerlink" href="#confusion-matrix" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Kelas Aktual</p></th>
-<th class="head text-right"><p>Hasil Prediksi Benar</p></th>
-<th class="head text-right"><p>Kesalahan Prediksi</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Iris-setosa</p></td>
-<td class="text-right"><p>16</p></td>
-<td class="text-right"><p>0</p></td>
-</tr>
-<tr class="row-odd"><td><p>Iris-versicolor</p></td>
-<td class="text-right"><p>16</p></td>
-<td class="text-right"><p>1</p></td>
-</tr>
-<tr class="row-even"><td><p>Iris-virginica</p></td>
-<td class="text-right"><p>11</p></td>
-<td class="text-right"><p>1</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="interpretasi-hasil">
-<h3>Interpretasi Hasil<a class="headerlink" href="#interpretasi-hasil" title="Link to this heading">#</a></h3>
-<p>Model berhasil mengklasifikasikan kelas <strong>Iris-setosa</strong> dengan sangat baik tanpa kesalahan. Hal ini menunjukkan bahwa karakteristik Iris-setosa cukup berbeda dibandingkan dua kelas lainnya.</p>
-<p>Kesalahan klasifikasi hanya terjadi pada kelas <strong>Iris-versicolor</strong> dan <strong>Iris-virginica</strong>. Hal tersebut wajar karena kedua kelas ini memiliki karakteristik ukuran sepal dan petal yang lebih mirip dibandingkan dengan Iris-setosa.</p>
-<p>Secara umum, model menunjukkan performa yang sangat baik karena mampu mencapai akurasi sebesar <strong>95,6%</strong>.</p>
+<h3>Penjelasan Script<a class="headerlink" href="#penjelasan-script" title="Link to this heading">#</a></h3>
+<p>Pada script tersebut, data latih dan data uji dibaca dari input node Python Script menggunakan <code class="docutils literal notranslate"><span class="pre">knio.input_tables</span></code>. Data tersebut kemudian diubah menjadi dataframe pandas agar dapat diproses menggunakan library Python.</p>
+<p>Selanjutnya, data dipisahkan menjadi fitur dan label. Fitur diambil dari semua kolom kecuali kolom terakhir, sedangkan label diambil dari kolom terakhir. Dalam dataset ini, kolom label adalah <code class="docutils literal notranslate"><span class="pre">species</span></code>.</p>
+<p>Model dibuat menggunakan <code class="docutils literal notranslate"><span class="pre">GaussianNB()</span></code> dari library <code class="docutils literal notranslate"><span class="pre">sklearn.naive_bayes</span></code>. Setelah model dilatih menggunakan data latih, model digunakan untuk memprediksi data uji. Hasil prediksi tersebut kemudian ditambahkan ke dataframe data uji dalam kolom baru bernama <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+<p>Output dari Python Script dikirim kembali ke KNIME dalam bentuk tabel menggunakan <code class="docutils literal notranslate"><span class="pre">knio.Table.from_pandas()</span></code>.</p>
 </section>
 </section>
 <hr class="docutils" />
-<section id="visualisasi-tabel-hasil-dengan-table-view">
-<h2>12. Visualisasi Tabel Hasil dengan Table View<a class="headerlink" href="#visualisasi-tabel-hasil-dengan-table-view" title="Link to this heading">#</a></h2>
-<p><img alt="Gambar 10. Tabel hasil prediksi pada Table View" src="images/table_view.png" /></p>
-<p><em>Keterangan: Table View menampilkan data uji beserta kolom label asli dan kolom hasil prediksi.</em></p>
+<section id="menampilkan-hasil-prediksi-menggunakan-table-view">
+<h2>12. Menampilkan Hasil Prediksi Menggunakan Table View<a class="headerlink" href="#menampilkan-hasil-prediksi-menggunakan-table-view" title="Link to this heading">#</a></h2>
 <p><strong>Node:</strong> Table View</p>
 <p><strong>Fungsi:</strong><br />
-Node Table View digunakan untuk menampilkan hasil akhir dari proses klasifikasi dalam bentuk tabel interaktif.</p>
-<p>Tabel hasil berisi data uji yang telah dinormalisasi, label asli, serta kolom hasil prediksi. Dengan adanya kolom <code class="docutils literal notranslate"><span class="pre">prediction</span></code>, pengguna dapat melihat secara langsung apakah hasil prediksi model sesuai dengan label sebenarnya.</p>
-</section>
-<hr class="docutils" />
-<section id="kesimpulan">
-<h2>13. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
-<p>Berdasarkan proyek yang telah dilakukan, dapat disimpulkan bahwa algoritma <strong>Gaussian Naive Bayes</strong> dapat digunakan dengan baik untuk melakukan klasifikasi pada dataset Iris. Integrasi antara KNIME dan Python memudahkan proses penambangan data karena KNIME menyediakan workflow visual, sedangkan Python memberikan fleksibilitas dalam penggunaan library machine learning.</p>
-<p>Model yang dibangun mampu mencapai akurasi sebesar <strong>95,6%</strong>, sehingga dapat dikatakan memiliki performa yang sangat baik. Kelas Iris-setosa berhasil diklasifikasikan dengan sempurna, sedangkan sedikit kesalahan terjadi pada kelas Iris-versicolor dan Iris-virginica karena kemiripan karakteristik antar keduanya.</p>
-<p>Dengan demikian, proyek ini berhasil menunjukkan penerapan algoritma Naive Bayes dalam proses klasifikasi data menggunakan KNIME dan Python Sklearn.</p>
-</section>
-<hr class="docutils" />
-<section id="panduan-nama-file-gambar">
-<h2>14. Panduan Nama File Gambar<a class="headerlink" href="#panduan-nama-file-gambar" title="Link to this heading">#</a></h2>
-<p>Agar gambar dapat muncul di file Markdown, simpan semua screenshot ke dalam folder bernama <code class="docutils literal notranslate"><span class="pre">images</span></code> yang berada satu lokasi dengan file laporan Markdown.</p>
-<p>Struktur folder yang disarankan:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>laporan_naive_bayes_knime_python.md
-images/
-├── workflow_knime.png
-├── csv_reader.png
-├── table_partitioner.png
-├── normalizer.png
-├── normalizer_apply.png
-├── python_script_node.png
-├── python_script_code.png
-├── classification_report.png
-├── scorer.png
-└── table_view.png
-</pre></div>
-</div>
-<p>Jika nama file gambar berbeda, sesuaikan bagian alamat gambar di laporan. Contohnya:</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>![<span class="nt">Gambar 1. Workflow utama KNIME</span>](<span class="na">images/workflow_knime.png</span>)
-</pre></div>
-</div>
-<p>Bagian <code class="docutils literal notranslate"><span class="pre">images/workflow_knime.png</span></code> dapat diganti sesuai nama file screenshot yang digunakan.</p>
-</section>
-<hr class="docutils" />
-<section id="daftar-pustaka">
-<h2>15. Daftar Pustaka<a class="headerlink" href="#daftar-pustaka" title="Link to this heading">#</a></h2>
+Node Table View digunakan untuk menampilkan hasil akhir dari proses klasifikasi. Pada tabel ini, data uji ditampilkan bersama label asli dan hasil prediksi model.</p>
+<p><strong>Kolom yang ditampilkan:</strong></p>
 <ul class="simple">
-<li><p>Dokumentasi scikit-learn: Gaussian Naive Bayes.</p></li>
-<li><p>Dokumentasi KNIME Analytics Platform.</p></li>
-<li><p>Dataset Iris.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sepal_width</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">petal_width</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">species</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code></p></li>
 </ul>
+<p>Kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> menunjukkan label asli dari dataset, sedangkan kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> menunjukkan hasil prediksi yang dihasilkan oleh model Gaussian Naive Bayes.</p>
+<p><img alt="Hasil Table View" src="_images/04-table-view-result.png" /></p>
+<p>Screenshot Table View perlu dimasukkan karena menjadi bukti bahwa Python Script berhasil menghasilkan kolom prediksi baru, yaitu <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 4. Hasil prediksi model pada Table View dengan kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> dan <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+</div></blockquote>
 </section>
+<hr class="docutils" />
+<section id="evaluasi-model-menggunakan-scorer">
+<h2>13. Evaluasi Model Menggunakan Scorer<a class="headerlink" href="#evaluasi-model-menggunakan-scorer" title="Link to this heading">#</a></h2>
+<p><strong>Node:</strong> Scorer</p>
+<p><strong>Fungsi:</strong><br />
+Node Scorer digunakan untuk mengevaluasi performa model klasifikasi. Evaluasi dilakukan dengan membandingkan label asli dengan label hasil prediksi.</p>
+<p><strong>Konfigurasi:</strong></p>
+<ul class="simple">
+<li><p>First column: <code class="docutils literal notranslate"><span class="pre">species</span></code></p></li>
+<li><p>Second column: <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code></p></li>
+<li><p>Sorting strategy: <strong>Insertion order</strong></p></li>
+<li><p>Missing values: <strong>Ignore</strong></p></li>
+</ul>
+<p>Kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> digunakan sebagai label asli, sedangkan kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> digunakan sebagai hasil prediksi dari model.</p>
+<p><img alt="Konfigurasi Scorer" src="_images/05-scorer-config.png" /></p>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 5. Konfigurasi Scorer untuk membandingkan kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> dan <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+</div></blockquote>
+<section id="hasil-evaluasi-scorer">
+<h3>Hasil Evaluasi Scorer<a class="headerlink" href="#hasil-evaluasi-scorer" title="Link to this heading">#</a></h3>
+<p><img alt="Hasil Scorer" src="_images/06-scorer-result.png" /></p>
+<p>Screenshot hasil Scorer perlu dimasukkan karena bagian ini menunjukkan hasil evaluasi model, seperti confusion matrix, accuracy, dan metrik evaluasi lainnya. Hasil ini menjadi bukti bahwa model tidak hanya menghasilkan prediksi, tetapi juga dapat diukur tingkat keberhasilannya.</p>
+<p><strong>Keterangan gambar:</strong></p>
+<blockquote>
+<div><p>Gambar 6. Hasil evaluasi model menggunakan Scorer.</p>
+</div></blockquote>
+<p>Jika pada hasil Scorer muncul nilai akurasi yang tinggi, maka model dapat dikatakan mampu melakukan klasifikasi data IRIS dengan baik. Apabila terdapat kesalahan prediksi, kesalahan tersebut biasanya terjadi antara kelas <code class="docutils literal notranslate"><span class="pre">Iris-versicolor</span></code> dan <code class="docutils literal notranslate"><span class="pre">Iris-virginica</span></code> karena kedua kelas tersebut memiliki karakteristik fitur yang cukup mirip.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="hasil-dan-pembahasan">
+<h1>14. Hasil dan Pembahasan<a class="headerlink" href="#hasil-dan-pembahasan" title="Link to this heading">#</a></h1>
+<p>Berdasarkan workflow yang telah dibuat, proses klasifikasi dataset IRIS menggunakan algoritma Gaussian Naive Bayes berhasil dijalankan di dalam KNIME. Proses dimulai dari pembacaan dataset menggunakan node CSV Reader, kemudian data dibagi menjadi data latih dan data uji menggunakan node Table Partitioner.</p>
+<p>Pada proyek ini, pembagian data dilakukan dengan rasio <strong>60% data latih</strong> dan <strong>40% data uji</strong> menggunakan strategi <strong>Random</strong>. Setelah itu, data latih dinormalisasi menggunakan node Normalizer pada kolom numerik, yaitu <code class="docutils literal notranslate"><span class="pre">sepal_length</span></code>, <code class="docutils literal notranslate"><span class="pre">sepal_width</span></code>, <code class="docutils literal notranslate"><span class="pre">petal_length</span></code>, dan <code class="docutils literal notranslate"><span class="pre">petal_width</span></code>.</p>
+<p>Data uji kemudian dinormalisasi menggunakan node Normalizer Apply. Hal ini dilakukan agar data uji memiliki skala yang sama dengan data latih, sehingga proses prediksi menjadi lebih konsisten dan terhindar dari data leakage.</p>
+<p>Model Gaussian Naive Bayes dibuat dan dijalankan melalui node Python Script. Model dilatih menggunakan data latih, kemudian digunakan untuk memprediksi data uji. Hasil prediksi ditambahkan ke dalam tabel dengan nama kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+<p>Hasil akhir dapat dilihat melalui node Table View. Pada Table View, terdapat kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> sebagai label asli dan kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> sebagai hasil prediksi dari model. Selanjutnya, evaluasi model dilakukan menggunakan node Scorer dengan membandingkan kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> dan <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
+<p>Dari proses tersebut, dapat diketahui apakah model berhasil melakukan klasifikasi dengan baik. Jika sebagian besar nilai pada kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> sama dengan nilai pada kolom <code class="docutils literal notranslate"><span class="pre">species</span></code>, maka model memiliki performa klasifikasi yang baik.</p>
+<hr class="docutils" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -838,42 +787,37 @@ images/
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pertemuan-10">Pertemuan 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">Naive Bayes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pertemuan-10-naive-bayes">Pertemuan 10: Naive Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-naive-bayes">1. Pengertian Naive Bayes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-teorema-bayes">2. Rumus Teorema Bayes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keterangan">Keterangan:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-teorema-bayes">2. Rumus Teorema Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-naive-bayes">3. Jenis-Jenis Naive Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kelebihan-naive-bayes">4. Kelebihan Naive Bayes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-proyek">5. Deskripsi Proyek</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-yang-digunakan">6. Tools yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuatan-workflow">7. Langkah-Langkah Pembuatan Workflow</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-dengan-csv-reader">7.1 Membaca Data dengan CSV Reader</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-latih-dan-data-uji-dengan-table-partitioner">7.2 Membagi Data Latih dan Data Uji dengan Table Partitioner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-latih-dengan-normalizer">7.3 Normalisasi Data Latih dengan Normalizer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-uji-dengan-normalizer-apply">7.4 Normalisasi Data Uji dengan Normalizer Apply</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-naive-bayes-dengan-python-script">7.5 Implementasi Naive Bayes dengan Python Script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-workflow">6. Visualisasi Workflow</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#script-python-yang-digunakan">8. Script Python yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-script">9. Penjelasan Script</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model-dengan-scorer">10. Evaluasi Model dengan Scorer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-evaluasi">11. Hasil Evaluasi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confusion-matrix">Confusion Matrix</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-hasil">Interpretasi Hasil</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuatan-workflow">Langkah-Langkah Pembuatan Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-menggunakan-csv-reader">7. Membaca Data Menggunakan CSV Reader</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-latih-dan-data-uji-menggunakan-table-partitioner">8. Membagi Data Latih dan Data Uji Menggunakan Table Partitioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-latih-menggunakan-normalizer">9. Normalisasi Data Latih Menggunakan Normalizer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menerapkan-normalisasi-ke-data-uji-menggunakan-normalizer-apply">10. Menerapkan Normalisasi ke Data Uji Menggunakan Normalizer Apply</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-naive-bayes-menggunakan-python-script">11. Implementasi Naive Bayes Menggunakan Python Script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#script-yang-digunakan">Script yang Digunakan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-script">Penjelasan Script</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-tabel-hasil-dengan-table-view">12. Visualisasi Tabel Hasil dengan Table View</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">13. Kesimpulan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panduan-nama-file-gambar">14. Panduan Nama File Gambar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-pustaka">15. Daftar Pustaka</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-prediksi-menggunakan-table-view">12. Menampilkan Hasil Prediksi Menggunakan Table View</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model-menggunakan-scorer">13. Evaluasi Model Menggunakan Scorer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-evaluasi-scorer">Hasil Evaluasi Scorer</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-dan-pembahasan">14. Hasil dan Pembahasan</a></li>
 </ul>
 
   </nav></div>
