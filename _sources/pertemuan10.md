@@ -1,6 +1,6 @@
-# Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)
+# Pertemuan 10
 
-## Pertemuan 10: Naive Bayes
+## Laporan Proyek: Klasifikasi Naive Bayes Menggunakan KNIME dan Python (Sklearn)
 
 ## 1. Pengertian Naive Bayes
 
@@ -247,8 +247,6 @@ Kolom `species` menunjukkan label asli dari dataset, sedangkan kolom `hasil_pred
 
 ![Hasil Table View](images/pertemuan10/04-table-view-result.png)
 
-Screenshot Table View perlu dimasukkan karena menjadi bukti bahwa Python Script berhasil menghasilkan kolom prediksi baru, yaitu `hasil_prediksi`.
-
 > Gambar 4. Hasil prediksi model pada Table View dengan kolom `species` dan `hasil_prediksi`.
 
 ---
@@ -276,8 +274,6 @@ Kolom `species` digunakan sebagai label asli, sedangkan kolom `hasil_prediksi` d
 ### Hasil Evaluasi Scorer
 
 ![Hasil Scorer](images/pertemuan10/06-scorer-result.png)
-
-Screenshot hasil Scorer perlu dimasukkan karena bagian ini menunjukkan hasil evaluasi model, seperti confusion matrix, accuracy, dan metrik evaluasi lainnya. Hasil ini menjadi bukti bahwa model tidak hanya menghasilkan prediksi, tetapi juga dapat diukur tingkat keberhasilannya.
 
 > Gambar 6. Hasil evaluasi model menggunakan Scorer.
 
