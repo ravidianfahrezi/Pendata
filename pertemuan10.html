@@ -527,11 +527,6 @@ Digunakan untuk data biner, yaitu data yang hanya memiliki dua kemungkinan nilai
 <section id="visualisasi-workflow">
 <h2>6. Visualisasi Workflow<a class="headerlink" href="#visualisasi-workflow" title="Link to this heading">#</a></h2>
 <p><img alt="Workflow KNIME" src="_images/01-workflow-knime.png" /></p>
-<p>Contoh gambar yang dimasukkan adalah workflow lengkap yang menampilkan urutan node:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>CSV Reader -&gt; Table Partitioner -&gt; Normalizer -&gt; Normalizer (Apply) -&gt; Python Script -&gt; Scorer -&gt; Table View
-</pre></div>
-</div>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 1. Workflow klasifikasi Naive Bayes menggunakan KNIME dan Python Script.</p>
 </div></blockquote>
@@ -563,7 +558,6 @@ Node Table Partitioner digunakan untuk membagi dataset menjadi dua bagian, yaitu
 <p>Berdasarkan konfigurasi tersebut, sebanyak <strong>60% data</strong> digunakan sebagai data latih, sedangkan <strong>40% data</strong> digunakan sebagai data uji. Strategi sampling yang digunakan adalah <strong>Random</strong>, sehingga pembagian data dilakukan secara acak.</p>
 <p>Pembagian ini penting agar model tidak hanya menghafal data, tetapi juga dapat diuji menggunakan data yang berbeda dari data latih.</p>
 <p><img alt="Konfigurasi Table Partitioner" src="_images/02-table-partitioner.png" /></p>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 2. Konfigurasi Table Partitioner dengan pembagian 60% data latih dan 40% data uji.</p>
 </div></blockquote>
@@ -584,7 +578,6 @@ Node Normalizer digunakan untuk mengubah skala nilai pada fitur numerik agar ber
 <p><strong>Konfigurasi:</strong><br />
 Pada proyek ini, kolom numerik dipilih secara manual pada bagian <strong>Includes</strong>. Proses normalisasi dilakukan ke dalam rentang nilai <strong>0 sampai 1</strong>. Hasil dari node ini adalah data latih yang sudah dinormalisasi dan model normalisasi yang berisi informasi skala dari data latih.</p>
 <p><img alt="Konfigurasi Normalizer" src="_images/03-normalizer.png" /></p>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 3. Konfigurasi Normalizer pada kolom numerik dataset IRIS.</p>
 </div></blockquote>
@@ -683,7 +676,6 @@ Node Table View digunakan untuk menampilkan hasil akhir dari proses klasifikasi.
 <p>Kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> menunjukkan label asli dari dataset, sedangkan kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> menunjukkan hasil prediksi yang dihasilkan oleh model Gaussian Naive Bayes.</p>
 <p><img alt="Hasil Table View" src="_images/04-table-view-result.png" /></p>
 <p>Screenshot Table View perlu dimasukkan karena menjadi bukti bahwa Python Script berhasil menghasilkan kolom prediksi baru, yaitu <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 4. Hasil prediksi model pada Table View dengan kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> dan <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
 </div></blockquote>
@@ -703,7 +695,6 @@ Node Scorer digunakan untuk mengevaluasi performa model klasifikasi. Evaluasi di
 </ul>
 <p>Kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> digunakan sebagai label asli, sedangkan kolom <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code> digunakan sebagai hasil prediksi dari model.</p>
 <p><img alt="Konfigurasi Scorer" src="_images/05-scorer-config.png" /></p>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 5. Konfigurasi Scorer untuk membandingkan kolom <code class="docutils literal notranslate"><span class="pre">species</span></code> dan <code class="docutils literal notranslate"><span class="pre">hasil_prediksi</span></code>.</p>
 </div></blockquote>
@@ -711,7 +702,6 @@ Node Scorer digunakan untuk mengevaluasi performa model klasifikasi. Evaluasi di
 <h3>Hasil Evaluasi Scorer<a class="headerlink" href="#hasil-evaluasi-scorer" title="Link to this heading">#</a></h3>
 <p><img alt="Hasil Scorer" src="_images/06-scorer-result.png" /></p>
 <p>Screenshot hasil Scorer perlu dimasukkan karena bagian ini menunjukkan hasil evaluasi model, seperti confusion matrix, accuracy, dan metrik evaluasi lainnya. Hasil ini menjadi bukti bahwa model tidak hanya menghasilkan prediksi, tetapi juga dapat diukur tingkat keberhasilannya.</p>
-<p><strong>Keterangan gambar:</strong></p>
 <blockquote>
 <div><p>Gambar 6. Hasil evaluasi model menggunakan Scorer.</p>
 </div></blockquote>

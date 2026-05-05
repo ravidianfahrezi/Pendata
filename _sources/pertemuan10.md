@@ -79,14 +79,6 @@ Tujuan dari proyek ini adalah membuat model klasifikasi yang dapat memprediksi j
 
 ![Workflow KNIME](images/pertemuan10/01-workflow-knime.png)
 
-Contoh gambar yang dimasukkan adalah workflow lengkap yang menampilkan urutan node:
-
-```text
-CSV Reader -> Table Partitioner -> Normalizer -> Normalizer (Apply) -> Python Script -> Scorer -> Table View
-```
-
-**Keterangan gambar:**
-
 > Gambar 1. Workflow klasifikasi Naive Bayes menggunakan KNIME dan Python Script.
 
 ---
@@ -124,8 +116,6 @@ Pembagian ini penting agar model tidak hanya menghafal data, tetapi juga dapat d
 
 ![Konfigurasi Table Partitioner](images/pertemuan10/02-table-partitioner.png)
 
-**Keterangan gambar:**
-
 > Gambar 2. Konfigurasi Table Partitioner dengan pembagian 60% data latih dan 40% data uji.
 
 ---
@@ -148,8 +138,6 @@ Node Normalizer digunakan untuk mengubah skala nilai pada fitur numerik agar ber
 Pada proyek ini, kolom numerik dipilih secara manual pada bagian **Includes**. Proses normalisasi dilakukan ke dalam rentang nilai **0 sampai 1**. Hasil dari node ini adalah data latih yang sudah dinormalisasi dan model normalisasi yang berisi informasi skala dari data latih.
 
 ![Konfigurasi Normalizer](images/pertemuan10/03-normalizer.png)
-
-**Keterangan gambar:**
 
 > Gambar 3. Konfigurasi Normalizer pada kolom numerik dataset IRIS.
 
@@ -261,8 +249,6 @@ Kolom `species` menunjukkan label asli dari dataset, sedangkan kolom `hasil_pred
 
 Screenshot Table View perlu dimasukkan karena menjadi bukti bahwa Python Script berhasil menghasilkan kolom prediksi baru, yaitu `hasil_prediksi`.
 
-**Keterangan gambar:**
-
 > Gambar 4. Hasil prediksi model pada Table View dengan kolom `species` dan `hasil_prediksi`.
 
 ---
@@ -285,8 +271,6 @@ Kolom `species` digunakan sebagai label asli, sedangkan kolom `hasil_prediksi` d
 
 ![Konfigurasi Scorer](images/pertemuan10/05-scorer-config.png)
 
-**Keterangan gambar:**
-
 > Gambar 5. Konfigurasi Scorer untuk membandingkan kolom `species` dan `hasil_prediksi`.
 
 ### Hasil Evaluasi Scorer
@@ -294,8 +278,6 @@ Kolom `species` digunakan sebagai label asli, sedangkan kolom `hasil_prediksi` d
 ![Hasil Scorer](images/pertemuan10/06-scorer-result.png)
 
 Screenshot hasil Scorer perlu dimasukkan karena bagian ini menunjukkan hasil evaluasi model, seperti confusion matrix, accuracy, dan metrik evaluasi lainnya. Hasil ini menjadi bukti bahwa model tidak hanya menghasilkan prediksi, tetapi juga dapat diukur tingkat keberhasilannya.
-
-**Keterangan gambar:**
 
 > Gambar 6. Hasil evaluasi model menggunakan Scorer.
 
