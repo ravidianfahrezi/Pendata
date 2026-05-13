@@ -100,15 +100,19 @@ Kolom target: `species` (Iris-setosa, Iris-versicolor, Iris-virginica).
 **Node:** Scorer  
 **Fungsi:** Membandingkan nilai prediksi dengan nilai aktual untuk melihat performa model.
 
+![Hasil Confusion Matrix](images/pertemuan12/06-scorer-confusion-matrix.png)
+
+> Gambar 6. Konfigurasi Confusion Matrix untuk mengahasilkan tingkat akurasi model.
+
 ---
 
 ## 12. Hasil Evaluasi (Confusion Matrix)
 
 Hasil evaluasi menunjukkan performa model yang sangat akurat dalam mengklasifikasikan spesies bunga Iris.
 
-![Hasil Confusion Matrix](images/pertemuan12/06-scorer-confusion-matrix.png)
+![Hasil Confusion Matrix](images/pertemuan12/07-scorer-confusion-matrix-hasil.png)
 
-> Gambar 6. Hasil Confusion Matrix menunjukkan tingkat akurasi model yang sangat tinggi.
+> Gambar 7. Hasil Confusion Matrix menunjukkan tingkat akurasi model yang sangat tinggi.
 
 ---
 
