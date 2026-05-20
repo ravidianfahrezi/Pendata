@@ -102,7 +102,7 @@ G = (5, 6)
 
 Setelah semua titik dimasukkan, GeoGebra akan menampilkan titik-titik tersebut pada bidang koordinat.
 
-![Koordinat Titik GeoGebra](images/pertemuan13/01-koordinat-titik-geogebra.png)
+![Koordinat Titik GeoGebra](images/pertemuan13/01-data-titik-geogebra.png)
 
 > Gambar 2. Tampilan titik koordinat A sampai G pada GeoGebra.
 
