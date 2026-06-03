@@ -1,4 +1,6 @@
-# Peramalan Kadar NO₂ di Daerah Bangkalan Menggunakan KNN Regression
+# Pertemuan 14
+
+## Peramalan Kadar NO₂ di Daerah Bangkalan Menggunakan KNN Regression
 
 ## Latar Belakang
 
@@ -302,7 +304,7 @@ MAPE  : 71.9605%
 Tambahkan gambar hasil deteksi outlier di sini.
 
 ```markdown
-![Deteksi Outlier](images/outlier_iqr.png)
+![Deteksi Outlier](images/pertemuan14/outlier_iqr.png)
 ```
 
 ---
@@ -312,7 +314,7 @@ Tambahkan gambar hasil deteksi outlier di sini.
 Tambahkan gambar hasil interpolasi data.
 
 ```markdown
-![Interpolasi Data](images/interpolasi.png)
+![Interpolasi Data](images/pertemuan14/interpolasi.png)
 ```
 
 ---
@@ -320,7 +322,7 @@ Tambahkan gambar hasil interpolasi data.
 ## 5.3 KNN Regression Lag 4
 
 ```markdown
-![KNN Lag 4](images/knn_lag4.png)
+![KNN Lag 4](images/pertemuan14/knn_lag4.png)
 ```
 
 ---
@@ -328,7 +330,7 @@ Tambahkan gambar hasil interpolasi data.
 ## 5.4 KNN Regression Lag 10
 
 ```markdown
-![KNN Lag 10](images/knn_lag10.png)
+![KNN Lag 10](images/pertemuan14/knn_lag10.png)
 ```
 
 ---
@@ -336,7 +338,7 @@ Tambahkan gambar hasil interpolasi data.
 ## 5.5 KNN Regression Lag 30
 
 ```markdown
-![KNN Lag 30](images/knn_lag30.png)
+![KNN Lag 30](images/pertemuan14/knn_lag30.png.png)
 ```
 
 ---
